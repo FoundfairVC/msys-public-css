@@ -97,15 +97,15 @@
 	 background: none;
 	 font-weight: 700;
 	 font-size: 1rem;
-	 color: #333333;
+	 color: var(--text-color);
 	 margin-top: 10px;
 	 padding: 5px 10px;
-	 border: 1px solid #333333;
+	 border: 1px solid var(--text-color)
 	 box-shadow: none;
 }
  .rs-teaser:hover .rs-teaser-body button {
-	 background: #173f9c;
-	 border-color: #173f9c;
-	 color: #ffffff;
+	 background: var(--cta-color);
+	 border-color: var(--cta-color);
+	 color: var(--cta-text-color);
 }
  
