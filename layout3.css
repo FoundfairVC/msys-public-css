@@ -1,4 +1,4 @@
-section[id="block-678e1301804dd500018dac3d"] figcaption {
+.rs-relatedpages-tile figcaption {
     position: absolute !important;
     bottom: -16px !important;
     left: 10%;
@@ -26,6 +26,12 @@ section[id="block-678e1301804dd500018dac3d"] figcaption {
   background-color: rgba(255, 255, 255, 1);
   padding: 20px;
   box-shadow: 2px 2px 4px #eee;
+}
+
+.rs-heroslider-overlay h1 {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  text-shadow: 0px 0px 0px #000000;
 }
 
 .hero-slider-block div {
