@@ -42,6 +42,10 @@
   border-radius: 0px;
 }
 
+.rs-griditem.rs-teaser {
+    border-radius: var(--image-border-radius)
+}
+
 .hero-slider-block div {
     overflow:visible;
 }
@@ -67,7 +71,7 @@ div.rs-griditem.rs-teaser .rs-teaser-body-image {
 
 /* Adjust the content block */
 div.rs-griditem.rs-teaser .rs-teaser-body-content {
-  padding: 16px; /* Add spacing */
+  padding: 12px; /* Add spacing */
   color: #4f4f4f; /* Neutral text color */
 }
 
