@@ -27,9 +27,10 @@
     left: 10%;
     z-index: 10;
     overflow: visible;
+    max-width: 600px;
   background-color: rgba(255, 255, 255, 1);
   padding: 20px;
-  box-shadow: 2px 2px 4px #eee;
+  box-shadow: 2px 2px 4px #ccc;
 }
 
 .rs-heroslider-overlay h1 {
@@ -57,7 +58,7 @@ div.rs-griditem.rs-teaser {
 }
 
 div.rs-griditem.rs-teaser {
-  background: #ffffff; /* White background */
+  background: #fefefe; /* White background */
   border: 1px solid #ddd; /* Subtle border */
   border-radius: 8px; /* Rounded corners */
   overflow: hidden; /* Ensure content stays inside */
@@ -87,16 +88,17 @@ div.rs-griditem.rs-teaser .cta-button {
   width: calc(100% - 32px);
   margin: 16px auto;
   padding: 12px 16px;
-  background-color: #0056b3; /* Dark blue background */
-  color: #ffffff; /* White text */
+  background-color: var(--cta-color);
+  color: var(--cta-text-color);
   text-align: center;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 0px;
   transition: background-color 0.3s;
 }
 
 div.rs-griditem.rs-teaser .cta-button-class:hover {
-  background-color: #003f7a; /* Darker blue on hover */
+  background-color: var(--cta-pressed-color); /* Darker blue on hover */
+  color: var(--cta-text-color);
 }
 
