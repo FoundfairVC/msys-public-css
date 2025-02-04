@@ -43,7 +43,7 @@
 }
 
 .rs-griditem.rs-teaser {
-    border-radius: var(--image-border-radius)
+    border-radius: var(--image-border-radius) !important;
 }
 
 .hero-slider-block div {
