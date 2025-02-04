@@ -30,8 +30,16 @@
 
 .rs-heroslider-overlay h1 {
   background-color: rgba(255, 255, 255, 1);
-  padding: 20px;
   text-shadow: 0px 0px 0px #000000;
+}
+
+.rs-heroslider-overlay p {
+  background-color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 0px #000000;
+}
+
+.rs-heroslider-overlay .cta-button {
+  border-radius: 0px;
 }
 
 .hero-slider-block div {
