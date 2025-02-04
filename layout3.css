@@ -15,6 +15,10 @@
     margin-bottom:32px;
 }
 
+.rs-heroslider-overlay {
+	 background: linear-gradient(to top, rgb(27 40 37 / 85%) 0, rgba(63, 71, 86, 0.35) 75%);
+}
+
 .rs-heroslider-overlay .container {
     position: absolute;
     bottom: -32px;
