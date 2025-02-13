@@ -36,6 +36,7 @@
   background-color: rgba(255, 255, 255, 1);
   padding: 20px;
   box-shadow: 2px 2px 4px #ccc;
+	color: #ccc;
 }
 
 .rs-heroslider-overlay h1 {
