@@ -88,7 +88,7 @@ div.rs-griditem.rs-teaser {
   margin: auto; /* Center element */
 }
 
-div.rs-teaser-image {
+div.rs-griditem .rs-teaser-image {
   height: 200px;
 }
 
