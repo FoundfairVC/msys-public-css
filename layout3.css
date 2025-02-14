@@ -123,7 +123,6 @@ div.rs-griditem.rs-teaser .cta-button {
   background-color: #00000000;
   color: var(--cta-color);
   text-align: center;
-  font-weight: bold;
   text-decoration: none;
   border-radius: var(--cta-border-radius);
   transition: background-color 0.3s;
