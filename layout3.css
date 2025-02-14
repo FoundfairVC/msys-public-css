@@ -5,6 +5,14 @@
     margin-right: auto;
     padding-left: calc((100vw - 1500px) / 2);
     padding-right: calc((100vw - 1500px) / 2);
+    margin-bottom: 0rem !important;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-bottom: 3rem;
+  }
 }
 
 .container.lead-form-block {
@@ -16,7 +24,7 @@
   padding-right: calc((100vw - 1024px) / 2);
 }
 
-section.text-with-media-list-block, nav.bread-crumbs-block {
+section.text-with-media-list-block, nav.bread-crumbs-block, nav.table-of-contents-block {
     background-color: var(--secondary-color);
 }
 
