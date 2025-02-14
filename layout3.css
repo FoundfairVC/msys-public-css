@@ -1,6 +1,17 @@
 section.container {
     max-width: 1500px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+div.hero-slider-block {
+  max-width: 1500px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
 .rs-relatedpages-tile figcaption {
@@ -133,3 +144,22 @@ div.rs-griditem.rs-teaser .cta-button-class:hover {
   color: var(--cta-text-color);
 }
 
+/* cta link on teasers
+
+*/
+
+div.rs-listitem.rs-teaser {
+  border-radius: var(--image-border-radius) !important;
+  padding: 8px;
+  background-color: var(--background-color);
+  border-color: aliceblue !important;
+  border-style: solid !important;
+  border: 1px;
+  background-color: var(--highlighted-background-color);
+}
+
+div.rs-listitem.rs-teaser a {
+  width: 100%;
+  text-align: right;
+  background-color: #01010101;
+}
