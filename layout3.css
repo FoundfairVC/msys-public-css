@@ -6,9 +6,15 @@
     padding-left: calc((100vw - 1500px) / 2);
     padding-right: calc((100vw - 1500px) / 2);
 }
+
 section.text-with-media-list-block, nav.bread-crumbs-block {
     background-color: var(--secondary-color);
 }
+
+.page-header {
+    border-color: var(--background-color);
+    border-bottom: 1px solid;
+} 
 
 div.hero-slider-block {
   max-width: 1500px;
