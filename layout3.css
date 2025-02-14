@@ -28,6 +28,11 @@ section.text-with-media-list-block, nav.bread-crumbs-block, nav.table-of-content
     background-color: var(--secondary-color);
 }
 
+nav.bread-crumbs-block {
+    margin-bottom: 0rem !important;
+    padding-bottom: 1rem;
+}
+
 .page-header {
     border-color: var(--background-color) !important;
     border-bottom: 1px solid;
