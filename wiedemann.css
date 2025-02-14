@@ -1,0 +1,351 @@
+section[id="block-678e1301804dd500018dac3d"] figcaption {
+    position: absolute !important;
+    bottom: -16px !important;
+    left: 10%;
+    width: 80%;
+    background: grey;
+    padding-top:8px;
+    padding-bottom:8px;
+    text-shadow: 0px 0px 0px #00000000;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+section[id="block-678e1301804dd500018dac3d"] figure {
+    margin-bottom:32px;
+}
+
+.rs-heroslider-overlay .container {
+    position: absolute;
+    bottom: -32px;
+    height: auto;
+    width: auto;
+    left: 10%;
+    z-index: 10;
+    overflow: visible;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  box-shadow: 2px 2px 4px #eee;
+}
+
+.hero-slider-block div {
+    overflow:visible;
+}
+
+div.rs-griditem.rs-teaser {
+  background: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays inside */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+  max-width: 400px; /* Constrain width */
+  margin: auto; /* Center element */
+}
+
+/* Add a styled image section */
+div.rs-griditem.rs-teaser .rs-teaser-body-image {
+  width: 100%; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  position: absolute;
+  top:32px;
+}
+
+/* Adjust the content block */
+div.rs-griditem.rs-teaser .rs-teaser-body-content {
+  padding: 16px; /* Add spacing */
+  color: #4f4f4f; /* Neutral text color */
+}
+
+/* Style the call-to-action button */
+div.rs-griditem.rs-teaser .cta-button {
+  display: block;
+  width: calc(100% - 32px);
+  margin: 16px auto;
+  padding: 12px 16px;
+  background-color: #0056b3; /* Dark blue background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+div.rs-griditem.rs-teaser .cta-button-class:hover {
+  background-color: #003f7a; /* Darker blue on hover */
+}
+
+/* 
+- logo 200px wide
+- a araound logo pt, pb 8px
+*/
+
+/* Custom CSS for M1+ */
+
+/*
+rgb(1, 19, 81)
+rgb(4, 29, 135)
+rgb(140, 140, 140)
+rgb (245, 75, 64)
+
+-- alt
+rgb(21, 63, 147)
+rgb(21, 63, 147)
+rgb(130, 141, 159)
+rgb(21, 32, 52)
+
+*/
+
+/* Data Grid */
+
+div.MuiDataGrid-root {
+  color: rgb(20, 32, 52);
+  line-height: 24px;
+}
+
+.MuiDataGrid-withBorderColor {
+  border-color: rgb(224, 224, 224);
+}
+
+.MuiGrid-item {
+  padding-left: 8px !important;
+  padding-top: 8px !important;
+  padding-right: 8px !important;
+}
+
+.MuiDataGrid-row {
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
+/* cards */
+
+h4.MuiTypography-h4 {
+  color: rgb(20, 32, 52);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+div.MuiPaper-root {
+  color: rgb(20, 32, 52);
+}
+
+.MuiTypography-body1 {
+  font-size: 14px;
+}
+
+.MuiTypography-body2 {
+  color: rgb(20, 32, 52);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.MuiListItemText-secondary {
+  color: rgb(140, 140, 140);
+  font-size: 14px;
+}
+
+.MuiGrid-spacing-xs-2 {
+  padding-left: 8px !important;
+  padding-right: 0px !important;
+  padding-top: 8px !important;
+  padding-bottom: 0px !important;
+}
+
+.MuiGrid-grid-xs-4 {
+  padding-left: 8px !important;
+  padding-right: 0px !important;
+  padding-top: 8px !important;
+  padding-bottom: 0px !important;
+}
+
+.MuiGrid-grid-xs-6 {
+  padding-left: 8px !important;
+  padding-right: 0px !important;
+  padding-top: 8px !important;
+  padding-bottom: 0px !important;
+}
+
+.MuiGrid-grid-xs-8 {
+  padding-left: 8px !important;
+  padding-right: 0px !important;
+  padding-top: 8px !important;
+  padding-bottom: 0px !important;
+}
+
+.MuiDivider-root {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* buttons */
+
+.MuiChip-label {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.MuiIconButton-root {
+  color: rgb(4, 29, 135);
+}
+
+.MuiButton-colorSecondary {
+  color: rgb(4, 29, 135) !important;
+}
+
+.MuiLink-root {
+  color: rgb(4, 29, 135);
+}
+
+.MuiSvgIcon-colorSecondary {
+  color: rgb(4, 29, 135);
+}
+
+.MuiButton-containedSecondary {
+  background-color: rgb(235, 235, 235) !important;
+}
+
+/* Property fields */
+
+.MuiTypography-caption {
+  color: rgb(130, 141, 159);
+}
+
+.MuiTypography-h1 {
+  color: rgb(20, 32, 52);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* avatar icon */
+
+.mui-2lb313 {
+  height: 32px !important;
+  width: 32px !important;
+}
+
+/* sidebar and menus */
+
+.mui-1t8ye1b {
+  background-color: rgb(4, 29, 135);
+}
+
+.mui-8vux5i.active {
+  color: rgb(20, 32, 52);
+  background-color: rgb(228, 232, 241);
+}
+
+.mui-8vux5i {
+  color: rgb(81, 88, 98);
+}
+
+.MuiTab-root {
+  color: rgb(81, 88, 98);
+}
+
+.MuiTab-root.Mui-selected {
+  color: rgb(20, 32, 52) !important;
+}
+
+a.Mui-selected {
+  color: rgb(20, 32, 52) !important;
+}
+
+.MuiFab-primary {
+  background-color: rgb(4, 29, 135);
+}
+
+.mui-dap83g {
+  font-size: 16px !important;
+}
+
+/* breadcrumbs */
+
+.MuiBreadcrumbs-ol {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+span.mui-sdfaca {
+  color: rgb(140, 140, 140);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+span.mui-13qwtto {
+  color: rgb(140, 140, 140);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Progress Bar */
+
+.mui-x3bifp {
+  color: rgb(4, 29, 135);
+}
+
+.mui-1oaudy0 {
+  color: rgb(4, 29, 135);
+  font-weight: 500;
+}
+
+/* Feedback button - almost hidden */
+
+.button-d1-0-5-15 {
+  background: rgba(0, 0, 0, 0);
+}
+
+.button-d1-0-3-15 {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* columns of kanban */
+
+div.mui-xenwxy {
+    background-color: #00000022;
+    /*position: absolute;*/
+}
+
+.mui-wvyiwg:nth-child(1) {
+    background-color: lightcoral !important;
+}
+
+.mui-wvyiwg:nth-child(2) {
+  background-color: lightsalmon !important;
+}
+
+.mui-wvyiwg:nth-child(3) {
+  background-color: lightgoldenrodyellow !important;
+}
+
+.mui-wvyiwg:nth-child(4) {
+  background-color: lightcyan !important;
+}
+
+.mui-wvyiwg:nth-child(5) {
+  background-color: lightblue !important;
+}
+
+.mui-wvyiwg:nth-child(6) {
+  background-color: lightskyblue !important;
+}
+
+.mui-wvyiwg:nth-child(7) {
+  background-color: lightgreen !important;
+}
+
+.mui-wvyiwg:nth-child(8) {
+  background-color: lightseagreen !important;
+}
+
+.mui-fw43dl {
+    background-color: #00000000;
+    height: 850px !important; /* does not work */
+    overflow-y: scroll !important;
+}
+
+.mui-9p7agi {
+    overflow-y: scroll !important; /* does not work */
+}

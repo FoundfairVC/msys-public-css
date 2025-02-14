@@ -59,6 +59,14 @@
 
 div.rs-griditem.rs-teaser {
     border-radius: var(--image-border-radius) !important;
+    padding: 8px;
+    background-color: var(--background-color);
+}
+
+div.rs-listitem.rs-teaser {
+  border-radius: var(--image-border-radius) !important;
+  padding: 8px;
+  background-color: var(--background-color);
 }
 
 .hero-slider-block div {
