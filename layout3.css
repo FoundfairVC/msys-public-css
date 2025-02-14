@@ -1,5 +1,5 @@
 .container {
-    max-width: 1500px;
+    max-width: 100% !important;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -7,12 +7,21 @@
     padding-right: calc((100vw - 1500px) / 2);
 }
 
+.container.lead-form-block {
+  max-width: 100% !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc((100vw - 1024px) / 2);
+  padding-right: calc((100vw - 1024px) / 2);
+}
+
 section.text-with-media-list-block, nav.bread-crumbs-block {
     background-color: var(--secondary-color);
 }
 
 .page-header {
-    border-color: var(--background-color);
+    border-color: var(--background-color) !important;
     border-bottom: 1px solid;
 } 
 
