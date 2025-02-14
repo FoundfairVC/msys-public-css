@@ -76,39 +76,6 @@ div.hero-slider-block {
 	line-height: 1.5;
 }
 
-.rs-heroslider-overlay .container {
-    position: absolute;
-    bottom: -32px;
-    height: auto;
-    width: auto;
-    left: 10%;
-    z-index: 10;
-    overflow: visible;
-    max-width: 600px;
-  background-color: rgba(255, 255, 255, 1);
-  padding: 20px;
-  box-shadow: 2px 2px 4px #ccc;
-	color: #333;
-}
-
-.rs-heroslider-overlay h1 {
-  background-color: rgba(255, 255, 255, 1);
-  color: #333;
-  text-shadow: 0px 0px 0px #000000;
-    font-size: 2.5rem;
-}
-
-.rs-heroslider-overlay p {
-  background-color: rgba(255, 255, 255, 1);
-  color: #333;
-  text-shadow: 0px 0px 0px #000000;
-    font-size: 1.25rem;
-}
-
-.rs-heroslider-overlay .cta-button {
-  border-radius: 0px;
-}
-
 div.rs-griditem.rs-teaser {
     border-radius: var(--image-border-radius) !important;
     padding: 8px;
