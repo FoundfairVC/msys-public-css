@@ -88,6 +88,10 @@ div.rs-griditem.rs-teaser {
   margin: auto; /* Center element */
 }
 
+div.rs-teaser-image {
+  height: 200px;
+}
+
 /* Add a styled image section */
 div.rs-griditem.rs-teaser .rs-teaser-body-image {
   width: 100%; /* Full width image */
