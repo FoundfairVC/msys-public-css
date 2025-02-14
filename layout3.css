@@ -3,7 +3,8 @@ section.container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
+    padding-left: calc((100vw - 1500px) / 2);
+    padding-right: calc((100vw - 1500px) / 2);
 }
 
 div.hero-slider-block {
