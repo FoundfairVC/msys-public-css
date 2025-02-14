@@ -17,7 +17,8 @@
   }
 }
 
-.container.lead-form-block {
+.container.lead-form-block,
+.container.msys-wizard-block {
   max-width: 100% !important;
   width: 100%;
   margin-left: auto;
