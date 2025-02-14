@@ -1,5 +1,4 @@
-section.container
-nav.container {
+section.container, nav.container {
     max-width: 1500px;
     width: 100%;
     margin-left: auto;
@@ -7,8 +6,7 @@ nav.container {
     padding-left: calc((100vw - 1500px) / 2);
     padding-right: calc((100vw - 1500px) / 2);
 }
-section.text-with-media-list-block
-nav.bread-crumbs-block {
+section.text-with-media-list-block, nav.bread-crumbs-block {
     background-color: var(--secondary-color);
 }
 
