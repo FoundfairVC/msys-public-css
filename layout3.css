@@ -48,6 +48,15 @@ div.hero-slider-block {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
+  margin-bottom: 0rem !important;
+  padding-bottom: 1rem;
+  background-color: var(--secondary-color);
+}
+
+@media (min-width: 768px) {
+  div.hero-slider-block {
+    padding-bottom: 1.5rem;
+  }
 }
 
 .rs-relatedpages-tile figcaption {
@@ -86,10 +95,6 @@ div.rs-listitem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
   padding: 8px;
   background-color: var(--background-color);
-}
-
-.hero-slider-block div {
-    overflow:visible;
 }
 
 div.rs-griditem.rs-teaser {
