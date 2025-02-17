@@ -91,7 +91,10 @@ div.hero-slider-block {
   padding-bottom: 1rem;
   background-color: var(--secondary-color);
   text-align: center;
+}
 
+div.rs-heroslider-overlay mt-8 {
+    margin-top: 0 !important;
 }
 
 @media (min-width: 768px) {
