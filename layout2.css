@@ -1,3 +1,76 @@
+.container {
+    max-width: 100% !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc(max(4px,(100vw - 1170px) / 2));
+    padding-right: calc(max(4px,(100vw - 1170px) / 2));
+    margin-bottom: 0rem !important;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
+.container.lead-form-block,
+.container.msys-wizard-block {
+  max-width: 100% !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(max(4px,(100vw - 1024px) / 2));
+  padding-right: calc(max(4px,(100vw - 1024px) / 2));
+}
+
+section.text-with-media-list-block, nav.bread-crumbs-block, nav.table-of-contents-block,
+section.msys-wizard-block, section.related-pages-block {
+    background-color: var(--secondary-color);
+}
+
+nav.bread-crumbs-block {
+    margin-bottom: 0rem !important;
+    padding-bottom: 1rem;
+}
+
+.page-header {
+    border-color: var(--background-color) !important;
+    border-bottom: 1px solid;
+} 
+
+.page-header .container {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+div.hero-slider-block {
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  margin-bottom: 0rem !important;
+  padding-left: calc(max(4px,(100vw - 1500px) / 2));
+  padding-right: calc(max(4px,(100vw - 1500px) / 2));
+  padding-bottom: 1rem;
+  background-color: var(--secondary-color);
+}
+
+div.hero-slider-block {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  div.hero-slider-block {
+    padding-bottom: 1.5rem;
+  }
+}
+
+
 div.rs-textwithmedialist h3 {
   font-size: 1rem;
   font-weight: 400;
@@ -17,11 +90,16 @@ h2 {
     font-weight: 400;
     color: var(--headline-text-color);
     text-transform: uppercase;
-  }
+}
 
 
 div.rs-textwithmedialist p {
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: -0.1px;
-  }
+}
+
+section.text-with-media-list-block, nav.bread-crumbs-block, nav.table-of-contents-block,
+section.msys-wizard-block {
+    background-color: var(--secondary-color);
+}
