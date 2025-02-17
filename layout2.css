@@ -127,6 +127,7 @@ div.rs-textwithmedialist h2+p {
 
 div.rs-textwithmedialist h2 {
     text-align: left;
+    word-wrap: break-word;
 }
 
 h2 {
