@@ -171,11 +171,13 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
   padding: 12px 16px;
   transition: 0.5s;
   color: var(--cta-color);
+  background-color: var(--cta-color);
+  color: var(--cta-text-color);
 }
 
 .cta-button:hover {
-  background-color: var(--cta-color);
-  color: var(--cta-text-color);
+  background-color: var(--cta-text-color);
+  color: var(--cta-color);
 }
 
 /* Style the call-to-action button */
