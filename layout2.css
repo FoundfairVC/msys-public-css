@@ -84,11 +84,16 @@ div.rs-textwithmedialist h2+p {
     margin-top: 15px;
 }
 
+div.rs-textwithmedialist h2 {
+    text-align: left;
+}
+
 h2 {
     font-size: 2rem;
     font-weight: 400;
     color: var(--headline-text-color);
     text-transform: uppercase;
+    text-align: center;
 }
 
 div.rs-listitem h4 {
