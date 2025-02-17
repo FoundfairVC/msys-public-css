@@ -108,21 +108,8 @@ section.msys-wizard-block {
     background-color: var(--secondary-color);
 }
 
-
 div.rs-griditem.rs-teaser {
-    border-radius: var(--image-border-radius) !important;
-    padding: 8px;
-    background-color: var(--background-color);
-}
-
-div.rs-listitem.rs-teaser {
-  border-radius: var(--image-border-radius) !important;
-  padding: 8px;
-  background-color: var(--background-color);
-}
-
-div.rs-griditem.rs-teaser {
-    background-color: var(--background-color);
+    background-color: var(--highlighted-background-color);
   border: 0px solid #ddd; /* Subtle border */
   border-radius: 8px; /* Rounded corners */
   overflow: hidden; /* Ensure content stays inside */
@@ -133,7 +120,7 @@ div.rs-griditem.rs-teaser {
 
 div.rs-listitem.rs-teaser {
     border-radius: var(--image-border-radius) !important;
-    padding: 8px;
+    padding: 0px;
     border: 0px;
     background-color: var(--highlighted-background-color);
   }
