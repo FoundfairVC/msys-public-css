@@ -79,6 +79,10 @@ div.hero-slider-block .cta-button {
     background-color: var(--cta-hero-pressed-color);
   }
 
+  .rs-heroslider-overlay {
+    background: #00000066;
+}
+
 div.hero-slider-block {
   max-width: 100%;
   width: 100%;
