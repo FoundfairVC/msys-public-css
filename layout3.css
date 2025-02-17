@@ -58,10 +58,8 @@ div.hero-slider-block {
   padding-right: calc(max(4px,(100vw - 1500px) / 2));
   padding-bottom: 1rem;
   background-color: var(--secondary-color);
-}
-
-div.hero-slider-block {
   text-align: center;
+
 }
 
 @media (min-width: 768px) {
