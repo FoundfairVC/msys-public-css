@@ -86,6 +86,10 @@ div.hero-slider-block .cta-button {
   transition: background-color 0.3s;
 }
 
+div.hero-slider-block .cta-button:hover {
+  background-color: var(--cta-hero-pressed-color);
+}
+
 .rs-relatedpages-tile figcaption {
     position: absolute !important;
     bottom: -16px !important;
@@ -211,6 +215,13 @@ div.rs-listitem.rs-teaser a {
   background-color: #01010101;
 }
 
+@media (max-width: 768px) {
+  div.rs-listitem .rs-teaser-body {
+    width: 50%;
+  }
+
+}
+
 @media (max-width: 512px) {
   div.rs-griditem.rs-teaser {
     padding: 4px;
@@ -234,8 +245,9 @@ div.rs-listitem.rs-teaser a {
     width: 100%;
   }
 
+  div.rs-listitem .rs-teaser-body {
+    width: 100%;
+    word-wrap: break-word;
+  }
 }
 
-/* cta link on teasers
-
-*/
