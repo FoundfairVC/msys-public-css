@@ -133,21 +133,11 @@ div.hero-slider-block .cta-button:hover {
 }
 
 div.rs-griditem.rs-teaser {
-    border-radius: var(--image-border-radius) !important;
-    padding: 8px;
-    background-color: var(--background-color);
-}
-
-div.rs-listitem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
   padding: 8px;
   background-color: var(--background-color);
-}
-
-div.rs-griditem.rs-teaser {
   background: #fefefe; /* White background */
   border: 1px solid #ddd; /* Subtle border */
-  border-radius: 8px; /* Rounded corners */
   overflow: hidden; /* Ensure content stays inside */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
   max-width: 400px; /* Constrain width */
@@ -202,7 +192,6 @@ div.rs-griditem.rs-teaser .cta-button:hover {
 div.rs-listitem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
   padding: 8px;
-  background-color: var(--background-color);
   border-color: aliceblue !important;
   border-style: solid !important;
   border: 1px;

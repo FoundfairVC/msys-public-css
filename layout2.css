@@ -70,7 +70,6 @@ div.hero-slider-block {
   }
 }
 
-
 div.rs-textwithmedialist h3 {
   font-size: 1rem;
   font-weight: 400;
@@ -92,6 +91,11 @@ h2 {
     text-transform: uppercase;
 }
 
+div.rs-listitem h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--headline-text-color);
+}
 
 div.rs-textwithmedialist p {
     font-size: 1rem;
@@ -103,3 +107,76 @@ section.text-with-media-list-block, nav.bread-crumbs-block, nav.table-of-content
 section.msys-wizard-block {
     background-color: var(--secondary-color);
 }
+
+
+div.rs-griditem.rs-teaser {
+    border-radius: var(--image-border-radius) !important;
+    padding: 8px;
+    background-color: var(--background-color);
+}
+
+div.rs-listitem.rs-teaser {
+  border-radius: var(--image-border-radius) !important;
+  padding: 8px;
+  background-color: var(--background-color);
+}
+
+div.rs-griditem.rs-teaser {
+    background-color: var(--background-color);
+  border: 0px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays inside */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); 
+  max-width: 400px; /* Constrain width */
+  margin: auto; /* Center element */
+}
+
+div.rs-listitem.rs-teaser {
+    border-radius: var(--image-border-radius) !important;
+    padding: 8px;
+    border: 0px;
+    background-color: var(--highlighted-background-color);
+  }
+
+@media (max-width: 768px) {
+    div.rs-listitem .rs-teaser-body {
+      width: 50%;
+    }
+  
+  }
+  
+  @media (max-width: 512px) {
+    div.rs-griditem.rs-teaser {
+      padding: 4px;
+    }
+  
+    div.rs-griditem.rs-teaser .cta-button {
+      padding: 12px 4px;
+      width: 100%;
+    }
+  
+    div.rs-griditem .rs-teaser-image {
+      height: 160px;
+    }
+  
+    div.rs-listitem.rs-teaser {
+      padding: 4px;
+      display: grid;
+    }
+  
+    div.rs-listitem .rs-teaser-image {
+      width: 100%;
+    }
+  
+    div.rs-listitem .rs-teaser-body {
+      width: 100%;
+      word-wrap: break-word;
+    }
+  }
+  
+  /*
+TODO gap grid and slider
+h4
+center h2
+radius around cards
+  */
