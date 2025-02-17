@@ -42,6 +42,11 @@ nav.bread-crumbs-block {
     border-bottom: 1px solid;
 } 
 
+.page-header .container {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
 div.hero-slider-block {
   max-width: 100%;
   width: 100%;
