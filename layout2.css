@@ -53,9 +53,24 @@ nav.bread-crumbs-block {
     padding: 15px 25px;
     transition: 0.5s;
     color: var(--cta-color);
+    background-color: var(--cta-color);
+    color: var(--cta-text-color);
+  }
+  
+  .cta-button:hover {
+    background-color: var(--cta-text-color);
+    color: var(--cta-color);
+  }
+
+div.rs-griditem.rs-teaser .cta-button {
+    background-color: #00000000;
+    border: 1px solid var(--cta-color);
+    padding: 15px 25px;
+    transition: 0.5s;
+    color: var(--cta-color);
 }
 
-.cta-button:hover {
+div.rs-griditem.rs-teaser .cta-button:hover {
     background-color: var(--cta-color);
     color: var(--cta-text-color);
 }
