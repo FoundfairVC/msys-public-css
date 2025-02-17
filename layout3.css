@@ -61,6 +61,22 @@ div.hero-slider-block {
   }
 }
 
+/* Style the call-to-action button */
+div.hero-slider-block .cta-button {
+  display: block;
+  margin: 16px auto;
+  padding: 12px 16px;
+  border-color: var(--cta-color);
+  border: 1px;
+  border-style: solid;
+  background-color: var(--cta-hero-color);
+  color: var(--cta-hero-text-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: var(--cta-border-radius);
+  transition: background-color 0.3s;
+}
+
 .rs-relatedpages-tile figcaption {
     position: absolute !important;
     bottom: -16px !important;
@@ -165,14 +181,10 @@ div.rs-griditem.rs-teaser .cta-button {
   transition: background-color 0.3s;
 }
 
-div.rs-griditem.rs-teaser .cta-button-class:hover {
+div.rs-griditem.rs-teaser .cta-button:hover {
   background-color: var(--cta-pressed-color); /* Darker blue on hover */
   color: var(--cta-text-color);
 }
-
-/* cta link on teasers
-
-*/
 
 div.rs-listitem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
@@ -189,3 +201,32 @@ div.rs-listitem.rs-teaser a {
   text-align: right;
   background-color: #01010101;
 }
+
+@media (max-width: 512px) {
+  div.rs-griditem.rs-teaser {
+    padding: 4px;
+  }
+
+  div.rs-griditem.rs-teaser .cta-button {
+    padding: 12px 4px;
+    width: 100%;
+  }
+
+  div.rs-griditem .rs-teaser-image {
+    height: 160px;
+  }
+
+  div.rs-listitem.rs-teaser {
+    padding: 4px;
+    display: grid;
+  }
+
+  div.rs-listitem .rs-teaser-image {
+    width: 100%;
+  }
+
+}
+
+/* cta link on teasers
+
+*/
