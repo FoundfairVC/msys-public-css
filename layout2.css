@@ -1,12 +1,27 @@
 div.rs-textwithmedialist h3 {
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 5px;
+  color: var(--text-color);
 }
 
-div.rs-textwithmedialist h2 {
+div.rs-textwithmedialist h3+h2 {
+    margin-top: 5px;
+}
+
+div.rs-textwithmedialist h2+p {
+    margin-top: 15px;
+}
+
+h2 {
     font-size: 2rem;
     font-weight: 400;
+    color: var(--headline-text-color);
     text-transform: uppercase;
-    margin-top: 5px;
+  }
+
+
+div.rs-textwithmedialist p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.1px;
   }
