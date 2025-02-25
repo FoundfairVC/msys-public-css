@@ -32,6 +32,14 @@ section.msys-wizard-block {
     background-color: var(--secondary-color);
 }
 
+nav.table-of-contents-block .grid {
+  grid-template-rows: 1fr;
+}
+
+nav.table-of-contents-block a {
+  text-decoration: underline;
+}
+
 nav.bread-crumbs-block {
     margin-bottom: 0rem !important;
     padding-bottom: 1rem;
