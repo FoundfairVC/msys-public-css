@@ -142,7 +142,7 @@ div.rs-griditem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
   padding: 8px;
   background-color: var(--background-color);
-  background: var(--highlighted-background-color); /* White background */
+  background: var(--background-color); /* White background */
   border: 1px solid #aaa; /* Subtle border */
   overflow: hidden; /* Ensure content stays inside */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
@@ -166,7 +166,7 @@ div.rs-griditem.rs-teaser .rs-teaser-body-image {
 /* Adjust the content block */
 div.rs-griditem.rs-teaser .rs-teaser-body-content {
   padding: 0px; /* Add spacing */
-  color: var(--highlighted-text-color); /* Neutral text color */
+  color: var(--text-color); /* Neutral text color */
 }
 
 .rs-teaser img {
@@ -213,10 +213,10 @@ div.rs-griditem.rs-teaser .cta-button:hover {
 div.rs-listitem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
   padding: 8px;
-  border-color: var(--highlighted-background-color) !important;
+  border-color: var(--background-color) !important;
   border-style: solid !important;
   border: 1px;
-  background-color: var(--highlighted-background-color);
+  background-color: var(--background-color);
 }
 
 div.rs-listitem.rs-teaser a {
