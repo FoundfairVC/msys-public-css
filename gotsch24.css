@@ -51,6 +51,11 @@ nav.bread-crumbs-block {
 
 h1, h2, h3 {
     text-transform: uppercase;
+    padding-bottom: 4px;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 .text-with-media-list-block h3 {
@@ -80,7 +85,7 @@ div.hero-slider-block {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 0px;
   margin-bottom: 0rem !important;
   padding-bottom: 1rem;
   background-color: var(--secondary-color);
@@ -239,9 +244,10 @@ div.rs-listitem.rs-teaser {
 
 div.rs-listitem.rs-teaser a {
   text-align: right;
-  padding: 8px 4px;
+  padding: 6px 8px;
   background-color: var(--cta-color);
-  color: var(--cta-text-color)
+  color: var(--cta-text-color);
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
