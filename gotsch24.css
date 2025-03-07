@@ -183,11 +183,6 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
   color: var(--text-color); /* Neutral text color */
 }
 
-.rs-teaser-body-content a {
-    background-color: var(--cta-color);
-    color: var(--cta-text-color)
-}
-
 .rs-teaser img {
   border-radius: var(--image-border-radius);
 }
@@ -239,9 +234,10 @@ div.rs-listitem.rs-teaser {
 }
 
 div.rs-listitem.rs-teaser a {
-  width: 100%;
   text-align: right;
-  background-color: #01010101;
+  padding: 8px 4px;
+  background-color: var(--cta-color);
+  color: var(--cta-text-color)
 }
 
 @media (max-width: 768px) {
