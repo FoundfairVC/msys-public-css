@@ -53,6 +53,10 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
+.text-with-media-list-block h3 {
+    color: var(--cta-color);
+}
+
 .page-header {
     border-color: var(--background-color) !important;
     border-bottom: 1px solid;
