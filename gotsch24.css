@@ -58,6 +58,23 @@ h2 {
     font-size: 2rem;
 }
 
+blockquote {
+    line-height: 24px;
+    font-size: 20px;
+    padding-bottom: 4px;
+    color: var(--headline-text-color);
+}
+
+h6 {
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    margin: 10px 0 0 0;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--headline-text-color);
+}
+
 .text-with-media-list-block h3 {
     color: var(--cta-color);
 }
