@@ -64,6 +64,20 @@ h2 {
     font-size: 2rem;
 }
 
+hr {
+    color: inherit;
+    border-top-width: 1px;
+    width: 192px;
+    height: 1px;
+    background-color: var(--cta-color);
+    box-shadow: none;
+    border: 0;
+    float: none;
+    clear: both;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 blockquote {
     line-height: 24px;
     font-size: 20px;
