@@ -1,3 +1,7 @@
+:root {
+    --link-font-weight: 500;
+}
+
 .container {
     max-width: 100% !important;
     width: 100%;
@@ -45,14 +49,22 @@ nav.bread-crumbs-block {
     padding-bottom: 1rem;
 }
 
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
 .page-header {
     border-color: var(--background-color) !important;
     border-bottom: 1px solid;
+
 } 
 
 .page-header .container {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
+    height: 120px;
+    text-transform: uppercase;
+    font-size: large;
 }
 
 div.hero-slider-block {
