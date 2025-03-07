@@ -71,6 +71,10 @@ h1, h2, h3 {
     font-size: large;
 }
 
+.page-header img {
+    height: 62px;
+}
+
 div.hero-slider-block {
   max-width: 100%;
   width: 100%;
