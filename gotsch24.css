@@ -179,6 +179,11 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
   color: var(--text-color); /* Neutral text color */
 }
 
+.rs-teaser-body-content a {
+    background-color: var(--cta-color);
+    color: var(--cta-text-color)
+}
+
 .rs-teaser img {
   border-radius: var(--image-border-radius);
 }
