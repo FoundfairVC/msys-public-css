@@ -27,6 +27,10 @@
   padding-right: calc(max(8px,(100vw - 1024px) / 2));
 }
 
+.container.msys-wizard-block {
+  background-color: white;
+}
+
 section.text-with-media-list-block, nav.bread-crumbs-block, nav.table-of-contents-block,
 section.msys-wizard-block {
     background-color: var(--secondary-color);
