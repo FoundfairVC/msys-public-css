@@ -17,6 +17,10 @@
   }
 }
 
+h1, h2, h3 {
+  white-space: normal;
+}
+
 .container.lead-form-block,
 .container.msys-wizard-block {
   max-width: 100% !important;

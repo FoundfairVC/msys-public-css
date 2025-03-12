@@ -80,6 +80,10 @@ div.hero-slider-block {
   }
 }
 
+h1, h2, h3 {
+  white-space: normal;
+}
+
 /* Style the call-to-action button */
 div.hero-slider-block .cta-button {
   display: block;
