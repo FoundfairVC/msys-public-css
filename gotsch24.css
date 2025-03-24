@@ -117,12 +117,13 @@ h5 {
     padding-top: 0.5rem;
     height: 120px;
     text-transform: uppercase;
-    font-size: large;
+    font-size: 19px;
     font-family: 'Oswald', sans-serif;
 }
 
 .page-header img {
     height: 62px;
+    width: 184px;
 }
 
 div.hero-slider-block {
@@ -136,6 +137,10 @@ div.hero-slider-block {
   background-color: var(--secondary-color);
   text-align: center;
 
+}
+
+footer {
+  background-image: url(gotsch/footerback.jpg);
 }
 
 @media (min-width: 768px) {
