@@ -109,8 +109,8 @@ h5 {
 .page-header {
     border-color: var(--background-color) !important;
     border-bottom: 1px solid;
-
-} 
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+}
 
 .page-header .container {
     padding-bottom: 0.5rem;
