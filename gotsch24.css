@@ -253,6 +253,10 @@ div.hero-slider-block .cta-button:hover {
   padding-bottom: 0px;
 }
 
+.text-with-media-list-block ~ .rs-heroslider-overlay {
+  background: #00000000;
+}
+
 @media (max-width: 512px) {
   .rs-heroslider-overlay h1 {
     font-size: 1.5rem;
