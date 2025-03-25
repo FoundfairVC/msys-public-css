@@ -149,6 +149,13 @@ footer {
   }
 }
 
+.rs-teaser-body ul.list-bullet li {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 8px;
+    position: relative;
+}
+
 /* Style the call-to-action button */
 div.hero-slider-block .cta-button {
   display: block;
