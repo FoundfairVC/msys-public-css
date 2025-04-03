@@ -78,7 +78,7 @@ h1, h2, h3 {
 .rs-teaser {
     height: 100%;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 .rs-teaser:hover a {
     color: #53a25c !important;
@@ -98,8 +98,8 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 .rs-teaser .rs-teaser-image img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 .rs-textwithmedialist.rs-teaser .rs-teaser-body {
     align-self: end;
