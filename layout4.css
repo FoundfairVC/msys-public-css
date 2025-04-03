@@ -90,6 +90,10 @@ h1, h2, h3 {
 .rs-teaser .rs-teaser-image {
     width: 40%;
 }
+.rs-griditem.rs-teaser {
+    background-color: #ffffff11;
+    border-width: 0px;
+}
 .rs-griditem.rs-teaser .rs-teaser-image, .rs-textwithmedialist.rs-teaser .rs-teaser-image {
     width: auto;
     margin-left: -15px;
