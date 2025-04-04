@@ -123,7 +123,9 @@ h1, h2, h3 {
 }
 .rs-listitem.rs-teaser {
     padding: 0;
+    background-color: rgba(2, 155, 225, 0.1);
 }
+
 .rs-teaser .rs-teaser-image {
     width: 40%;
 }
