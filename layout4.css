@@ -63,9 +63,6 @@ h1, h2, h3 {
 .template-list-block h3 + h2, .related-pages-block h3 + h2, .text-with-media-list-block h3 + h2 {
     margin-top: 4px;
 }
-.rs-heroslider-overlay {
-    background: linear-gradient(to top, rgb(27 40 37 / 85%) 0, rgba(63, 71, 86, 0.35) 75%);
-}
 .rs-heroslider-overlay h1 {
     color: #ffffff;
     font-weight: 900;
