@@ -58,9 +58,24 @@ h1, h2, h3 {
     font-family: 'bebas', sans-serif;
 }
 
+
 .page-header img {
-    height: 47px;
-    width: 250px;
+    height: 72px;
+    width: 384px;
+}
+
+@media (max-width: 1200px) {
+    .page-header img {
+        height: 47px;
+        width: 250px;
+    }    
+}
+
+@media (max-width: 768px) {
+    .page-header img {
+        height: 32px;
+        width: 148px;
+    }    
 }
 
 .template-list-block h2, .related-pages-block h2, .text-with-media-list-block h2 {
@@ -130,6 +145,12 @@ h1, h2, h3 {
     font-weight: 400;
     font-size: 1.1rem;
 }
+
+div.rs-textwithmedialist.bg-\[--highlighted-background-color\] {
+    border: var(--headline-text-color) 1px solid;
+    border-radius: 8px;
+}
+
 .rs-listitem.rs-teaser .rs-teaser-body {
     padding: 15px;
     margin-left: 0;
@@ -183,5 +204,6 @@ nav.table-of-contents-block a {
 }
 
 .cta-button {
+    padding: 10px 10px;
     font-family: 'bebas', 'Roboto', sans-serif;
 }
