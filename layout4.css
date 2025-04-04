@@ -3,8 +3,8 @@
 }
 
 @font-face {
-    font-family: bebas;
-    src: url(bebas-neue-v2-latin-regular.woff2);
+    font-family: Assistant;
+    src: url(assistant.woff2);
   }
 
   .container {
@@ -48,7 +48,7 @@ section.msys-wizard-block {
 
 h1, h2, h3 {
     white-space: normal;
-    font-family: 'bebas', 'Roboto', sans-serif;
+    font-family: 'Assistant', 'Roboto', sans-serif;
 }
 
 .template-list-block h2, .related-pages-block h2, .text-with-media-list-block h2 {
