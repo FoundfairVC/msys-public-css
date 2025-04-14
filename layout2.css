@@ -170,6 +170,11 @@ div.rs-heroslider-overlay mt-8 {
   }
 }
 
+@media (max-width: 512px) {
+  .rs-heroslider-overlay p {
+    font-size: 1rem !important;
+  }
+}
 div.rs-textwithmedialist h3 {
     font-weight: 700;
   }

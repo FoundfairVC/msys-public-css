@@ -143,9 +143,8 @@ div.hero-slider-block .cta-button:hover {
     line-height: 2rem;
   }
   .rs-heroslider-overlay p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
+    visibility: none;
+}
 }
 
 .body {
