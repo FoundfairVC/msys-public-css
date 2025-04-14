@@ -116,6 +116,11 @@ h1, h2, h3 {
     font-size: 1rem !important;
   }
 }
+@media (max-width: 512px) {
+  .rs-heroslider-overlay p {
+    visibility: none;
+    }
+}
 .rs-heroslider-overlay button {
     padding: 12px 15px !important;
     transition: ease-in-out .5s;
