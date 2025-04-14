@@ -118,7 +118,7 @@ h1, h2, h3 {
 }
 @media (max-width: 512px) {
   .rs-heroslider-overlay p {
-    visibility: none;
+    display: none;
     }
 }
 .rs-heroslider-overlay button {

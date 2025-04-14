@@ -62,7 +62,7 @@ div.hero-slider-block {
 }
 @media (max-width: 512px) {    
     .rs-heroslider-overlay p {
-        visibility: none;
+        display: none;
     }
 }
 .rs-heroslider-overlay button {

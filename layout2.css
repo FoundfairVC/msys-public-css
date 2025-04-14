@@ -172,7 +172,7 @@ div.rs-heroslider-overlay mt-8 {
 
 @media (max-width: 512px) {
   .rs-heroslider-overlay p {
-    visibility: none;
+    display: none;
   }
 }
 div.rs-textwithmedialist h3 {
