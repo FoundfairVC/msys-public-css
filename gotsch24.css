@@ -365,7 +365,7 @@ div.rs-listitem.rs-teaser {
   background-color: var(--background-color);
 }
 
-div.rs-listitem.rs-teaser a {
+div.rs-listitem.rs-teaser a, .rs-relatedpages-link-button {
   text-align: right;
   padding: 6px 8px;
   background-color: var(--cta-color);

@@ -70,7 +70,7 @@ nav.bread-crumbs-block {
 
 @media (max-width: 768px) {
   .page-header img {
-      height: 48px;
+      max-height: 48px;
   }    
 }
 

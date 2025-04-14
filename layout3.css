@@ -240,7 +240,7 @@ div.rs-listitem.rs-teaser {
   background-color: var(--background-color);
 }
 
-div.rs-listitem.rs-teaser a {
+div.rs-listitem.rs-teaser a, .rs-relatedpages-link-button {
   width: 100%;
   text-align: right;
   background-color: #01010101;
