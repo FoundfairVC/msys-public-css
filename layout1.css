@@ -135,3 +135,41 @@ nav.table-of-contents-block .grid {
 nav.table-of-contents-block a {
     text-decoration: underline;
 }
+
+
+.rs-relatedpages-tile-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .rs-relatedpages-tile figcaption {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  
+  .rs-relatedpages-tile figcaption:hover {
+    background: var(--cta-color);
+  }
+  
+  @media (min-width: 768px) {
+    .rs-relatedpages-tile-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .rs-relatedpages-tile figcaption {
+      font-size: 1.25rem;
+  }
+  }
+  
+  @media (min-width: 1024px) {
+    .rs-relatedpages-tile-container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  
+    .rs-relatedpages-tile figcaption {
+      font-size: 1rem;
+    }
+  }
+  
+  .rs-relatedpages-tile {
+      margin-bottom: 16px;
+  }
