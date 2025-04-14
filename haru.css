@@ -136,6 +136,15 @@ h1, h2, h3 {
     margin-right: -15px;
     margin-bottom: 10px;
 }
+div.rs-griditem.rs-teaser .cta-button {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    div.rs-griditem.rs-teaser .cta-button {
+      display: block;
+    }
+  }
 .rs-teaser .rs-teaser-image img {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;

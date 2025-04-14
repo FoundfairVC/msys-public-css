@@ -73,6 +73,15 @@ div.hero-slider-block {
     margin-right: -15px;
     margin-bottom: 10px;
 }
+div.rs-griditem.rs-teaser .cta-button {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    div.rs-griditem.rs-teaser .cta-button {
+      display: block;
+    }
+  }
 .rs-teaser .rs-teaser-image img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;

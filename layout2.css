@@ -79,6 +79,7 @@ nav.bread-crumbs-block {
   }
 
 div.rs-griditem.rs-teaser .cta-button {
+  display: none;
     background-color: #00000000;
     border: 1px solid var(--cta-color);
     padding: 15px 25px;
@@ -89,6 +90,12 @@ div.rs-griditem.rs-teaser .cta-button {
 div.rs-griditem.rs-teaser .cta-button:hover {
     background-color: var(--cta-color);
     color: var(--cta-text-color);
+}
+
+@media (min-width: 768px) {
+  div.rs-griditem.rs-teaser .cta-button {
+    display: block;
+  }
 }
 
 div.hero-slider-block .cta-button {
