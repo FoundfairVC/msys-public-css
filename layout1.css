@@ -34,7 +34,7 @@ div.hero-slider-block {
     text-align: center;
 }
 .rs-heroslider-overlay {
-    background: linear-gradient(to top, rgb(27 40 37 / 85%) 0, rgba(63, 71, 86, 0.35) 75%);
+    background: linear-gradient(to top, rgb(27 40 37 / 25%) 0, rgba(63, 71, 86, 0.05) 75%);
 }
 .rs-heroslider-overlay h1 {
     color: #ffffff;
