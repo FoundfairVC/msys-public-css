@@ -79,6 +79,12 @@ div.hero-slider-block {
     padding: 15px;
     border-radius: 10px;
 }
+@media (max-width:512px) {
+    .template-list-block .rs-teaser {
+        padding: 0px;
+    }    
+}
+
 .rs-teaser:hover a {
     color: #53a25c !important;
     transition: ease-in-out .5s;

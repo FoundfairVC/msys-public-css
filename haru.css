@@ -135,6 +135,11 @@ h1, h2, h3 {
     padding: 15px;
     border-radius: 0px;
 }
+@media (max-width:512px) {
+    .template-list-block .rs-teaser {
+        padding: 0px;
+    }    
+}
 .rs-teaser:hover a {
     color: #53a25c !important;
     transition: ease-in-out .5s;
