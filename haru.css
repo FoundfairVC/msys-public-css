@@ -103,6 +103,19 @@ h1, h2, h3 {
     font-weight: 400;
     font-size: 1.4rem;
 }
+@media (max-width: 768px) {
+    .rs-heroslider-overlay h1 {
+        font-size: 1.6rem;
+    }
+    
+    .rs-heroslider-overlay h2 {
+        font-size: 1rem;
+    }
+        
+  .rs-heroslider-overlay p {
+    font-size: 1rem !important;
+  }
+}
 .rs-heroslider-overlay button {
     padding: 12px 15px !important;
     transition: ease-in-out .5s;

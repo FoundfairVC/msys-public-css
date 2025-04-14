@@ -37,10 +37,24 @@ div.hero-slider-block {
     font-weight: 900;
     font-size: 2.3rem;
 }
+
 .rs-heroslider-overlay h2 {
     color: #ffffff;
     font-weight: 400;
     font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+    .rs-heroslider-overlay h1 {
+        font-size: 1.6rem;
+    }
+    
+    .rs-heroslider-overlay h2 {
+        font-size: 1rem;
+    }
+        
+  .rs-heroslider-overlay p {
+    font-size: 1rem !important;
+  }
 }
 .rs-heroslider-overlay button {
     padding: 12px 15px !important;

@@ -145,6 +145,20 @@ div.rs-heroslider-overlay mt-8 {
   }
 }
 
+@media (max-width: 768px) {
+  .rs-heroslider-overlay h1 {
+      font-size: 1.6rem;
+  }
+  
+  .rs-heroslider-overlay h2 {
+      font-size: 1rem;
+  }
+    
+  .rs-heroslider-overlay p {
+    font-size: 1rem !important;
+  }
+}
+
 div.rs-textwithmedialist h3 {
     font-weight: 700;
   }
