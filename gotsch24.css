@@ -125,6 +125,12 @@ h5 {
     width: 184px;
 }
 
+@media (max-width: 768px) {
+    .page-header img {
+        height: 36px;
+    }    
+}
+
 div.hero-slider-block {
   max-width: 100%;
   width: 100%;

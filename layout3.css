@@ -59,6 +59,13 @@ nav.bread-crumbs-block {
     padding-top: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .page-header .container {
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+  }
+  }
+
 div.hero-slider-block {
   max-width: 100%;
   width: 100%;
