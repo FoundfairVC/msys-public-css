@@ -211,3 +211,8 @@ nav.table-of-contents-block a {
   .rs-relatedpages-tile {
       margin-bottom: 16px;
   }
+
+  .rs-ddmenu-item {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }

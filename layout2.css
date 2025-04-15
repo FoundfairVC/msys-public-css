@@ -286,3 +286,9 @@ div.rs-listitem.rs-teaser {
 TODO
 - contact form
   */
+
+
+.rs-ddmenu-item {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}

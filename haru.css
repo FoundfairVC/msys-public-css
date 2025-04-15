@@ -241,3 +241,8 @@ nav.table-of-contents-block a {
     padding: 10px 10px;
     font-family: 'bebas', 'Roboto', sans-serif;
 }
+
+.rs-ddmenu-item {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }

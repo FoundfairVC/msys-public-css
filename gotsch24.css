@@ -409,3 +409,8 @@ div.rs-listitem.rs-teaser a, .rs-relatedpages-link-button {
   }
 }
 
+.rs-ddmenu-item {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+

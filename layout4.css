@@ -170,3 +170,8 @@ nav.table-of-contents-block .grid {
 nav.table-of-contents-block a {
     text-decoration: underline;
 }
+
+.rs-ddmenu-item {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
