@@ -249,6 +249,14 @@ div.hero-slider-block .cta-button:hover {
   }
 }
 
+@media (max-width: 512px) {
+  .hero-slider-block {
+    padding: 0 0px;
+    margin-bottom: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+}
+
 .rs-relatedpages-tile {
     margin-bottom: 16px;
 }
