@@ -295,6 +295,13 @@ div.hero-slider-block .cta-button:hover {
 	line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+  .body {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
 div.rs-griditem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
   padding: 8px;
