@@ -305,8 +305,8 @@ div.hero-slider-block .cta-button:hover {
 div.rs-griditem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
   padding: 8px;
-  background-color: var(--background-color);
-  background: var(--background-color); /* White background */
+  background-color: var(--highlighted-background-color);
+  background: var(--highlighted-background-color); /* White background */
   border: 1px solid #aaa; /* Subtle border */
   overflow: hidden; /* Ensure content stays inside */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */

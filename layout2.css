@@ -229,7 +229,7 @@ div.rs-textwithmedialist p {
 }
 
 div.rs-griditem.rs-teaser {
-    background-color: var(--highlighted-background-color);
+  background-color: var(--secondary-color);
   border: 0px solid #ddd; /* Subtle border */
   border-radius: 8px; /* Rounded corners */
   overflow: hidden; /* Ensure content stays inside */
