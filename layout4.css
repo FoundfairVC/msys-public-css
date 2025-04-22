@@ -101,6 +101,13 @@ h1, h2, h3 {
     background-color: #ffffff11;
     border-width: 0px;
 }
+
+@media (max-width: 512px) {
+    div.rs-griditem.rs-teaser h4 {
+      font-size: 1rem;
+    }
+}
+
 .rs-griditem.rs-teaser .rs-teaser-image, .rs-textwithmedialist.rs-teaser .rs-teaser-image {
     width: auto;
     margin-left: -15px;

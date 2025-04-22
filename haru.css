@@ -168,6 +168,14 @@ div.rs-griditem.rs-teaser .cta-button {
       display: block;
     }
   }
+
+
+@media (max-width: 512px) {
+    div.rs-griditem.rs-teaser h4 {
+        font-size: 1rem;
+    }
+}
+
 .rs-teaser .rs-teaser-image img {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;

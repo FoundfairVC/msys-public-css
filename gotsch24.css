@@ -314,6 +314,12 @@ div.rs-griditem.rs-teaser {
   margin: auto; /* Center element */
 }
 
+@media (max-width: 512px) {
+  div.rs-griditem.rs-teaser h4 {
+    font-size: 1rem;
+  }
+}
+
 div.rs-griditem .rs-teaser-image {
   height: 200px;
 }

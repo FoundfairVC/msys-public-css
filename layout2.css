@@ -280,8 +280,10 @@ div.rs-listitem.rs-teaser {
       width: 100%;
       word-wrap: break-word;
     }
+    div.rs-griditem.rs-teaser h4 {
+      font-size: 1rem;
   }
-  
+}
   /*
 TODO
 - contact form
