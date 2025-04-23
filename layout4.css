@@ -182,3 +182,8 @@ nav.table-of-contents-block a {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+.payload-richtext img{
+    margin-left: auto;
+    margin-right: auto;
+  }

@@ -444,3 +444,8 @@ div.rs-listitem.rs-teaser a, .rs-relatedpages-link-button {
   line-height: 2rem;
 }
 
+.payload-richtext img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
