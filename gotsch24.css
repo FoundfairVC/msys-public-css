@@ -24,6 +24,10 @@
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
   }
+
+  body {
+    font-size: 0.875rem;
+  }
 }
 
 .container.lead-form-block,
@@ -70,10 +74,10 @@ h2 {
 
 @media (max-width: 768px) {
     h1, h2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -98,6 +102,13 @@ blockquote {
     padding-bottom: 4px;
     font-weight: 500;
     color: var(--headline-text-color);
+}
+
+@media (max-width: 768px) {
+    blockquote {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 h5 {
@@ -159,6 +170,16 @@ footer {
 @media (min-width: 768px) {
   div.hero-slider-block {
     padding-bottom: 0rem;
+  }
+
+  div.hero-slider-block h-60 {
+    height: 10rem !important;
+  }
+}
+
+@media (max-width: 512px) {    
+  .rs-heroslider-overlay p {
+      display: none;
   }
 }
 
@@ -325,7 +346,7 @@ div.rs-griditem.rs-teaser {
   margin: auto; /* Center element */
 }
 
-@media (max-width: 512px) {
+@media (max-width: 768px) {
   div.rs-griditem.rs-teaser h4 {
     font-size: 1rem;
   }
