@@ -172,7 +172,7 @@ footer {
     padding-bottom: 0rem;
   }
 
-  div.hero-slider-block h-60 {
+  div.hero-slider-block .h-60 {
     height: 10rem !important;
   }
 }
