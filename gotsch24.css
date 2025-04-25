@@ -16,13 +16,13 @@
     padding-right: calc(max(8px,(100vw - 1200px) / 2));
     margin-bottom: 0rem !important;
     padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 0rem;
 }
 
 @media (min-width: 768px) {
   .container {
     padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
   }
 
   body {
