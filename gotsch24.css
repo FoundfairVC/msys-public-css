@@ -79,9 +79,11 @@ h2 {
 @media (max-width: 768px) {
     h1, h2 {
         font-size: 1.25rem;
+        padding-bottom: 0px;
     }
     h3 {
         font-size: 1rem;
+        padding-bottom: 0px;
     }
 }
 
