@@ -72,8 +72,12 @@ h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
 }
 
-h2 {
-    font-size: 2rem;
+h1, h2 {
+    font-size: 1.75rem;
+}
+
+h1, h2 {
+  font-size: 1.25rem;
 }
 
 @media (max-width: 768px) {
