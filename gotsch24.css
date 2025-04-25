@@ -53,6 +53,10 @@ section.msys-wizard-block {
     background-color: var(--secondary-color);
 }
 
+section.text-with-media-list-block.highlighted {
+    background-color: var(--highlighted-background-color);
+}
+
 nav.table-of-contents-block .grid {
   grid-template-rows: 1fr;
 }
