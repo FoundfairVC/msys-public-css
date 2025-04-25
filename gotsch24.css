@@ -104,6 +104,15 @@ blockquote {
     color: var(--headline-text-color);
 }
 
+.rs-searchbar blockquote{
+  line-height: 20px;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-bottom: 4px;
+  font-weight: 500;
+  color: var(--headline-text-color);
+} 
+
 @media (max-width: 768px) {
     blockquote {
         font-size: 14px;
@@ -171,9 +180,6 @@ footer {
   div.hero-slider-block .h-60 {
     height: 12rem !important;
   }
-}
-
-@media (max-width: 512px) {    
   .rs-heroslider-overlay p {
       display: none;
   }
@@ -258,7 +264,7 @@ div.hero-slider-block .cta-button:hover {
     text-shadow: none;
     text-transform: uppercase;
     font-size: 1.25rem;
-}
+  }
 }
 
 @media (min-width: 1024px) {
