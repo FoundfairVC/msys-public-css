@@ -506,3 +506,7 @@ div.rs-listitem.rs-teaser a, .rs-relatedpages-link-button {
 button.transition-colors {
   background: #ffffff99;
 }
+
+section.template-list-block h2 {
+  margin-bottom: 0px;
+}
