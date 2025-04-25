@@ -15,7 +15,7 @@
     padding-left: calc(max(8px,(100vw - 1200px) / 2));
     padding-right: calc(max(8px,(100vw - 1200px) / 2));
     margin-bottom: 0rem !important;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0rem;
     padding-top: 0rem;
 }
 
