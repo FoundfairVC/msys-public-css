@@ -198,12 +198,22 @@ section.rs-searchbar {
   margin-right: auto;
   padding-left: calc(max(8px, (100vw - 800px) / 2));
   padding-right: calc(max(8px, (100vw - 800px) / 2));
-  margin-bottom: -40px !important;
-  padding-bottom: 0.5rem !important;
+  margin-bottom: -90px !important;
+  padding-bottom: 0rem !important;
   padding-top: 0.5rem !important;
   position: relative;
-  top: -40px;
+  top: -80px;
   background: transparent;;
+}
+
+@media (max-width: 768px) {
+  section.rs-searchbar {
+    margin-bottom: -60px !important;
+    padding-bottom: 0rem !important;
+    padding-top: 0.5rem !important;
+    position: relative;
+    top: -54px;
+  }
 }
 
 .rs-teaser-body ul.list-bullet li {
