@@ -230,7 +230,7 @@ section.rs-searchbar {
 /* Style the call-to-action button */
 div.hero-slider-block .cta-button {
   display: block;
-  margin: 16px auto;
+  margin: 8px auto;
   padding: 12px 16px;
   border-color: var(--cta-color);
   border: 1px;
@@ -419,7 +419,7 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
 div.rs-griditem.rs-teaser .cta-button {
   display: none;
   width: calc(100% - 32px);
-  margin: 16px auto;
+  margin: 2px auto;
   padding: 12px 16px;
   border-color: var(--cta-color);
   border: 1px;
