@@ -53,7 +53,7 @@ section.msys-wizard-block {
     background-color: var(--secondary-color);
 }
 
-section.text-with-media-list-block.highlighted {
+section.text-with-media-list-block.rs-highlighted {
     background-color: var(--highlighted-background-color);
 }
 
