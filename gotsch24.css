@@ -167,11 +167,6 @@ footer {
   background-image: url(gotsch/footerback.jpg);
 }
 
-@media (min-width: 768px) {
-  div.hero-slider-block {
-    padding-bottom: 0rem;
-  }
-
 @media (max-width: 768px) {
   div.hero-slider-block .h-60 {
     height: 12rem !important;
@@ -238,7 +233,7 @@ div.hero-slider-block .cta-button:hover {
   background: rgba(127,127,127, 0.7);
   padding-top: 8px;
   padding-bottom: 8px;
-  text-shadow: 0px 0px 0px #00000000;
+  text-shadow: none;
   text-transform: uppercase;
   font-size: 1rem;
 }
@@ -260,7 +255,7 @@ div.hero-slider-block .cta-button:hover {
     background: rgba(127,127,127, 0.7);
     padding-top: 8px;
     padding-bottom: 8px;
-    text-shadow: 0px 0px 0px #00000000;
+    text-shadow: none;
     text-transform: uppercase;
     font-size: 1.25rem;
 }
@@ -276,10 +271,10 @@ div.hero-slider-block .cta-button:hover {
     bottom: -16px !important;
     left: 10%;
     width: 80%;
-    background: grey;
+    background: rgba(127,127,127, 0.7);
     padding-top: 8px;
     padding-bottom: 8px;
-    text-shadow: 0px 0px 0px #00000000;
+    text-shadow: none;
     text-transform: uppercase;
     font-size: 1rem;
   }
