@@ -76,7 +76,7 @@ h1, h2 {
     font-size: 1.75rem;
 }
 
-h1, h2 {
+h3 {
   font-size: 1.25rem;
 }
 
@@ -508,7 +508,7 @@ div.rs-listitem.rs-teaser a, .rs-relatedpages-link-button {
 
 /* slider chevron button */
 button.transition-colors {
-  background: #ffffff99;
+  background: #ffffff66;
 }
 
 section.template-list-block h2 {
