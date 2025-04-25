@@ -114,7 +114,7 @@ blockquote {
 } 
 
 @media (max-width: 768px) {
-    blockquote {
+    blockquote, .rs-searchbar blockquote {
         font-size: 14px;
         line-height: 20px;
     }
