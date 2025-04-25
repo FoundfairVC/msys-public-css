@@ -371,6 +371,10 @@ div.rs-griditem.rs-teaser {
   margin: auto; /* Center element */
 }
 
+div.rs-griditem.rs-teaser h4 {
+  font-size: 1rem;
+}
+
 @media (max-width: 768px) {
   div.rs-griditem.rs-teaser h4 {
     font-size: 1rem;
