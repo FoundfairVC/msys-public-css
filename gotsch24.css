@@ -57,6 +57,15 @@ section.text-with-media-list-block.rs-highlighted {
     background-color: var(--highlighted-background-color);
 }
 
+/* fade out too large teasers */
+section.text-with-media-list-block.rs-highlighted .rs-teaser-body {
+  max-height: 27vh;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 0));
+
+  overflow: hidden;
+}
+
 nav.table-of-contents-block .grid {
   grid-template-rows: 1fr;
 }
