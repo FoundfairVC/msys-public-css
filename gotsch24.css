@@ -323,7 +323,7 @@ div.hero-slider-block .cta-button:hover {
 }
 
 .rs-relatedpages-tile figcaption:hover {
-  background: var(--cta-color);
+  background: rgba(127,127,127, 1);
 }
 
 @media (min-width: 768px) {
