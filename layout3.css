@@ -159,9 +159,21 @@ div.hero-slider-block .cta-button:hover {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  .rs-heroslider-overlay p {
-    display: none;
 }
+
+@media (max-width: 768px) {
+  div.rs-hero-slider-container {
+    height: 12rem !important;
+  }
+  .rs-heroslider-overlay p {
+      display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  div.rs-hero-slider-container {
+    height: 320px !important;
+  }
 }
 
 .body {

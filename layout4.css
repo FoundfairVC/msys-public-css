@@ -98,6 +98,20 @@ section.text-with-media-list-block.rs-highlighted .rs-teaser-body, .rs-purpose-t
     color: #53a25c;
     transition: ease-in-out .5s;
 }
+@media (max-width: 768px) {
+    div.rs-hero-slider-container {
+      height: 12rem !important;
+    }
+    .rs-heroslider-overlay p {
+        display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    div.rs-hero-slider-container {
+      height: 320px !important;
+    }
+  }
 .rs-teaser {
     height: 100%;
     padding: 15px;

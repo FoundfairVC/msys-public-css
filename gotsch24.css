@@ -208,11 +208,17 @@ footer {
 }
 
 @media (max-width: 768px) {
-  div.hero-slider-block .h-60 {
+  div.rs-hero-slider-container {
     height: 12rem !important;
   }
   .rs-heroslider-overlay p {
       display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  div.rs-hero-slider-container {
+    height: 320px !important;
   }
 }
 
