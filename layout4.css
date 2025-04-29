@@ -242,3 +242,18 @@ nav.table-of-contents-block a {
       top: -54px;
     }
   }
+
+
+.rs-relatedpages-icon-background {
+    width: 96px;
+    height: 64px;
+    background-color: var(--cta-color);
+  }
+  
+  .rs-relatedpages-icon {
+    width: 100%;
+    height: 100%;
+    color: var(--cta-text-color);
+    stroke-width: 1px;
+    padding: 2px;
+  }

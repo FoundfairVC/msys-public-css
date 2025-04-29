@@ -336,14 +336,15 @@ div.hero-slider-block .cta-button:hover {
 .rs-relatedpages-icon-background {
   width: 96px;
   height: 64px;
-  background-color: #00000000;
+  background-color: var(--cta-color);
 }
 
 .rs-relatedpages-icon {
   width: 100%;
   height: 100%;
-  color: var(--text-color);
+  color: var(--cta-text-color);
   stroke-width: 1px;
+  padding: 2px;
 }
 
 .related-pages-block .rs-carousel-item {
