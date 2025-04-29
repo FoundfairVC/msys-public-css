@@ -328,7 +328,23 @@ section.rs-searchbar {
   margin-right: auto;
   padding-left: calc(max(8px, (100vw - 800px) / 2));
   padding-right: calc(max(8px, (100vw - 800px) / 2));
+  margin-bottom: 0.5rem !important;
+  margin-top: -1rem !important;
+  padding-bottom: 0rem !important;
+  padding-top: 0rem !important;
+  position: relative;
+  background: transparent;
+}
+
+.hero-slider-block + section.rs-searchbar {
+  max-width: 100% !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(max(8px, (100vw - 800px) / 2));
+  padding-right: calc(max(8px, (100vw - 800px) / 2));
   margin-bottom: -90px !important;
+  margin-top: 0rem !important;
   padding-bottom: 0rem !important;
   padding-top: 0.5rem !important;
   position: relative;
@@ -337,15 +353,19 @@ section.rs-searchbar {
 }
 
 @media (max-width: 768px) {
-  section.rs-searchbar {
+  .hero-slider-block + section.rs-searchbar {
     margin-bottom: -60px !important;
     padding-bottom: 0.5rem !important;
     padding-top: 0.5rem !important;
     position: relative;
     top: -54px;
   }
-}
 
+  section.rs-searchbar {
+    margin-bottom: 0.1rem !important;
+    margin-top: 0rem !important;
+  }
+}
 
 .rs-relatedpages-icon-background {
   width: 96px;
