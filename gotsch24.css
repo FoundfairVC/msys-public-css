@@ -143,6 +143,9 @@ blockquote {
   font-weight: 500;
   color: var(--headline-text-color);
 } 
+.rs-searchbar .absolute {
+  background-color: var(--navigation-background-color);
+}
 
 @media (max-width: 768px) {
     blockquote, .rs-searchbar blockquote {
