@@ -295,6 +295,6 @@ nav.table-of-contents-block a {
   width: 100%;
   height: 100%;
   color: var(--cta-text-color);
-  stroke-width: 1px;
+  stroke-width: 1.5px;
   padding: 2px;
 }
