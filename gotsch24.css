@@ -348,7 +348,7 @@ div.hero-slider-block .cta-button:hover {
 
 .related-pages-block .rs-carousel-item {
   /* TODO media query */
-  flex-basis: 30%;
+  flex-basis: 126px;
 }
 
 @media (max-width: 512px) {
