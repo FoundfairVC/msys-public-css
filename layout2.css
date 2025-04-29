@@ -227,7 +227,22 @@ div.rs-textwithmedialist p {
     font-weight: 400;
     letter-spacing: -0.1px;
 }
+/* fade out too large teasers */
+section.text-with-media-list-block.rs-highlighted .rs-teaser-body, section.text-with-media-list-block .rs-purpose-teaser {
+  max-height: 27vh;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 0));
 
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  section.text-with-media-list-block .rs-purpose-trust {
+    p, blockquote, img {
+      font-display: none;
+    }
+  }
+}
 div.rs-griditem.rs-teaser {
   background-color: var(--secondary-color);
   border: 0px solid #ddd; /* Subtle border */
@@ -298,4 +313,29 @@ TODO
 .payload-richtext img{
   margin-left: auto;
   margin-right: auto;
+}
+
+section.rs-searchbar {
+  max-width: 100% !important;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(max(8px, (100vw - 800px) / 2));
+  padding-right: calc(max(8px, (100vw - 800px) / 2));
+  margin-bottom: -90px !important;
+  padding-bottom: 0rem !important;
+  padding-top: 0.5rem !important;
+  position: relative;
+  top: -80px;
+  background: transparent;;
+}
+
+@media (max-width: 768px) {
+  section.rs-searchbar {
+    margin-bottom: -60px !important;
+    padding-bottom: 0rem !important;
+    padding-top: 0.5rem !important;
+    position: relative;
+    top: -54px;
+  }
 }
