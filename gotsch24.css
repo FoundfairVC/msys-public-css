@@ -68,8 +68,8 @@ section.text-with-media-list-block.rs-highlighted .rs-teaser-body, .rs-purpose-t
 
 @media (max-width: 768px) {
   section.text-with-media-list-block .rs-purpose-trust {
-    p, blockquote, img {
-      font-display: none;
+    p, blockquote, img, h4, h5, hr {
+      display: none;
     }
   }
 }
@@ -229,7 +229,7 @@ footer {
   }
 }
 
-section.rs-searchbar {
+.hero-slider-block + section.rs-searchbar {
   max-width: 100% !important;
   width: 100%;
   margin-left: auto;
@@ -245,7 +245,7 @@ section.rs-searchbar {
 }
 
 @media (max-width: 768px) {
-  section.rs-searchbar {
+  .hero-slider-block + section.rs-searchbar {
     margin-bottom: -60px !important;
     padding-bottom: 0.5rem !important;
     padding-top: 0.5rem !important;
