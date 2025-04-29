@@ -379,8 +379,22 @@ div.hero-slider-block .cta-button:hover {
 }
 
 .related-pages-block .rs-carousel-item {
-  /* TODO media query */
-  flex-basis: 126px;
+  flex-basis: 102px;
+}
+@media (min-width: 440px) {
+  .related-pages-block .rs-carousel-item {
+    flex-basis: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .related-pages-block .rs-carousel-item {
+    flex-basis: 20%;
+  }
+}
+@media (min-width: 1024px) {
+  .related-pages-block .rs-carousel-item {
+    flex-basis: 16.67%;
+  }
 }
 
 @media (max-width: 512px) {
