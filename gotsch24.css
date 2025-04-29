@@ -71,6 +71,10 @@ section.text-with-media-list-block.rs-highlighted .rs-teaser-body, .rs-purpose-t
     p, blockquote, img, h4, h5, hr {
       display: none;
     }
+    .mt-2 {
+      margin-top: 0px !important;
+    }
+    gap: 0px;
   }
 }
 
@@ -266,6 +270,11 @@ section.rs-searchbar {
     padding-top: 0.5rem !important;
     position: relative;
     top: -54px;
+  }
+
+  section.rs-searchbar {
+    margin-bottom: 0.1rem !important;
+    margin-top: 0rem !important;
   }
 }
 
