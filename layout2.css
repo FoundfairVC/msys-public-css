@@ -21,6 +21,17 @@ h1, h2, h3 {
   white-space: normal;
 }
 
+@media (max-width: 768px) {
+  h1, h2 {
+      font-size: 1.25rem;
+      padding-bottom: 0px;
+  }
+  h3 {
+      font-size: 1rem;
+      padding-bottom: 0px;
+  }
+}
+
 .container.lead-form-block,
 .container.msys-wizard-block {
   max-width: 100% !important;
