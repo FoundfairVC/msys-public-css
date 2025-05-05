@@ -330,12 +330,12 @@ section.rs-searchbar {
   margin-right: auto;
   padding-left: calc(max(8px, (100vw - 800px) / 2));
   padding-right: calc(max(8px, (100vw - 800px) / 2));
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0rem !important;
   margin-top: -1rem !important;
   padding-bottom: 0rem !important;
   padding-top: 0rem !important;
   position: relative;
-  background: transparent;
+  background: var(--secondary-color);
 }
 
 .hero-slider-block + section.rs-searchbar {
@@ -351,7 +351,7 @@ section.rs-searchbar {
   padding-top: 0.5rem !important;
   position: relative;
   top: -80px;
-  background: transparent;;
+  background: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
