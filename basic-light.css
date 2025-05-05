@@ -23,6 +23,9 @@
 	 font-weight: 400;
 	 font-size: 1.4rem;
 }
+.rs-heroslider-overlay p {
+	font-size: 1.25rem;
+  }
  .rs-heroslider-overlay button {
 	 padding: 12px 15px !important;
 	 transition: ease-in-out .5s;

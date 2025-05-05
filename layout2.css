@@ -150,6 +150,10 @@ div.rs-heroslider-overlay mt-8 {
     margin-top: 0 !important;
 }
 
+.rs-heroslider-overlay p {
+  font-size: 1.25rem;
+}
+
 @media (min-width: 768px) {
   div.hero-slider-block {
     padding-bottom: 1.5rem;

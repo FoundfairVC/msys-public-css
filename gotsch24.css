@@ -218,6 +218,10 @@ footer {
   background-image: url(gotsch/footerback.jpg);
 }
 
+.rs-heroslider-overlay p {
+  font-size: 1.25rem;
+}
+
 @media (max-width: 768px) {
   div.rs-hero-slider-container {
     height: 12rem !important;
@@ -417,6 +421,7 @@ div.hero-slider-block .cta-button:hover {
 .rs-heroslider-overlay .container {
   padding-right: 5%;
   padding-left: 5%;
+  margin-top: -20px;
 }
 
 .text-with-media-list-block ~ .hero-slider-block {

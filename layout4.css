@@ -98,6 +98,10 @@ section.text-with-media-list-block.rs-highlighted .rs-teaser-body, .rs-purpose-t
     color: #53a25c;
     transition: ease-in-out .5s;
 }
+
+.rs-heroslider-overlay p {
+  font-size: 1.25rem;
+}
 @media (max-width: 768px) {
     div.rs-hero-slider-container {
       height: 12rem !important;

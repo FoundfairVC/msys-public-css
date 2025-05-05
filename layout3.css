@@ -152,8 +152,12 @@ div.hero-slider-block .cta-button:hover {
 .rs-heroslider-overlay .container {
   padding-right: 5%;
   padding-left: 5%;
+  margin-top: -20px;
 }
 
+.rs-heroslider-overlay p {
+  font-size: 1.25rem;
+}
 @media (max-width: 512px) {
   .rs-heroslider-overlay h1 {
     font-size: 1.5rem;

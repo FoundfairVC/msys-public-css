@@ -103,6 +103,10 @@ h1, h2, h3 {
     font-weight: 400;
     font-size: 1.4rem;
 }
+
+.rs-heroslider-overlay p {
+    font-size: 1.25rem;
+  }
 @media (max-width: 768px) {
     .rs-heroslider-overlay h1 {
         font-size: 1.6rem;
