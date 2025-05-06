@@ -249,6 +249,18 @@ nav.table-of-contents-block a {
     text-decoration: underline;
 }
 
+.rs-header-link div {
+    color: var(--header-text-color);
+    border-color: var(--header-text-color);
+   }
+  
+  .rs-header-link:hover {
+      div{
+    color: var(--header-background-color);
+    background-color: var(--header-text-color);
+    border-color: var(--header-text-color);
+   }}
+
 .cta-button {
     padding: 10px 10px;
     font-family: 'bebas', 'Roboto', sans-serif;

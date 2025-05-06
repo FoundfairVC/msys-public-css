@@ -104,7 +104,6 @@ nav.bread-crumbs-block {
     padding-top: 0.5rem;
 }
 
-
 .page-header img {
   max-height: 96px;
 }
@@ -114,6 +113,18 @@ nav.bread-crumbs-block {
       max-height: 48px;
   }    
 }
+
+.rs-header-link div {
+  color: var(--header-text-color);
+  border-color: var(--header-text-color);
+ }
+
+.rs-header-link:hover {
+    div{
+  color: var(--header-background-color);
+  background-color: var(--header-text-color);
+  border-color: var(--header-text-color);
+ }}
 
 .cta-button {
     background-color: #00000000;

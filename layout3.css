@@ -252,6 +252,18 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
   border-radius: var(--image-border-radius);
 }
 
+.rs-header-link div {
+  color: var(--header-text-color);
+  border-color: var(--header-text-color);
+ }
+
+.rs-header-link:hover {
+    div{
+  color: var(--header-background-color);
+  background-color: var(--header-text-color);
+  border-color: var(--header-text-color);
+ }}
+
 .cta-button {
   background-color: #00000000;
   border: 1px solid var(--cta-color);
