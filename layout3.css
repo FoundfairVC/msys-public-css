@@ -387,7 +387,24 @@ section.rs-searchbar {
   top: -80px;
   background: transparent;;
 }
+.rs-searchbar div.space-y-1 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
+@media (max-width: 768px) {
+    blockquote, .rs-searchbar blockquote {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .rs-searchbar h3, p {
+        font-size: 0.875rem;
+    }
+    .rs-searchbar div.space-y-1 {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
 @media (max-width: 768px) {
   .hero-slider-block + section.rs-searchbar {
     margin-bottom: -60px !important;
