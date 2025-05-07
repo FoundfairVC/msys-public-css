@@ -12,8 +12,8 @@
 
 @media (min-width: 768px) {
   .container {
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 }
 
@@ -113,7 +113,7 @@ div.hero-slider-block {
   margin-bottom: 0rem !important;
   padding-left: calc(max(8px,(100vw - 1500px) / 2));
   padding-right: calc(max(8px,(100vw - 1500px) / 2));
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   background-color: var(--secondary-color);
   text-align: center;
 
@@ -121,7 +121,7 @@ div.hero-slider-block {
 
 @media (min-width: 768px) {
   div.hero-slider-block {
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -184,7 +184,7 @@ div.hero-slider-block .cta-button:hover {
 .rs-heroslider-overlay .container {
   padding-right: 5%;
   padding-left: 5%;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .rs-heroslider-overlay p {
@@ -447,4 +447,10 @@ section.rs-searchbar {
   color: var(--cta-text-color);
   stroke-width: 1.5px;
   padding: 2px;
+}
+
+@media (min-width: 1024px) {
+  .related-pages-block .rs-carousel-item {
+    flex-basis: 20%;
+  }
 }
