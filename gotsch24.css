@@ -150,6 +150,7 @@ blockquote {
 .rs-searchbar .absolute {
   background-color: var(--navigation-background-color);
   margin-top: 4px;
+  max-height: 60vh;
 }
 
 .rs-searchbar div.space-y-1 {

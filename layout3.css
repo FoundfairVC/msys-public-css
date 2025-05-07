@@ -406,7 +406,10 @@ section.rs-searchbar {
 .rs-searchbar h3 {
   font-size: 1.25rem;
 }
-
+.rs-searchbar .absolute {
+  margin-top: 4px;
+  max-height: 60vh;
+}
 @media (max-width: 768px) {
     blockquote, .rs-searchbar blockquote {
         font-size: 14px;

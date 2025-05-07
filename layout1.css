@@ -318,6 +318,10 @@ nav.table-of-contents-block a {
     top: -80px;
     background: transparent;;
   }
+  .rs-searchbar .absolute {
+    margin-top: 4px;
+    max-height: 60vh;
+  }
   .rs-searchbar div.space-y-1 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
