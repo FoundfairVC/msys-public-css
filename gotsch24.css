@@ -407,7 +407,7 @@ div.hero-slider-block .cta-button:hover {
 }
 @media (min-width: 1024px) {
   .related-pages-block .rs-carousel-item {
-    flex-basis: 16.67%;
+    flex-basis: 20%;
   }
 }
 

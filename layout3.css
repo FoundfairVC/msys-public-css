@@ -451,6 +451,6 @@ section.rs-searchbar {
 
 @media (min-width: 1024px) {
   .related-pages-block .rs-carousel-item {
-    flex-basis: 20%;
+    flex-basis: 25%;
   }
 }

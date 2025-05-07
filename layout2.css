@@ -447,3 +447,14 @@ section.rs-searchbar {
   stroke-width: 1.5px;
   padding: 2px;
 }
+
+@media (min-width: 768px) {
+  .related-pages-block .rs-carousel-item {
+    flex-basis: 20%;
+  }
+}
+@media (min-width: 1024px) {
+  .related-pages-block .rs-carousel-item {
+    flex-basis: 20%;
+  }
+}
