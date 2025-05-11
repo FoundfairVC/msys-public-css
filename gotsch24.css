@@ -153,7 +153,7 @@ blockquote {
   max-height: 60vh;
 }
 
-.rs-searchbar-conatainer {
+.rs-searchbar-container {
   padding: 0rem;
 }
 
@@ -327,7 +327,7 @@ div.hero-slider-block .cta-button:hover {
   background-color: var(--cta-hero-pressed-color);
 }
 
-.rs-relatedpages-block h2 {
+.rs-related-pages-block h2 {
   margin-bottom: 0px;
 }
 
