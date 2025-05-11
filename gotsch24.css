@@ -276,12 +276,12 @@ section.rs-searchbar {
   margin-right: auto;
   padding-left: calc(max(8px, (100vw - 800px) / 2));
   padding-right: calc(max(8px, (100vw - 800px) / 2));
-  margin-bottom: -78px !important;
+  margin-bottom: -72px !important;
   margin-top: 0rem !important;
   padding-bottom: 0rem !important;
   padding-top: 0.5rem !important;
   position: relative;
-  top: -70px;
+  top: -64px;
   background: transparent;;
 }
 
