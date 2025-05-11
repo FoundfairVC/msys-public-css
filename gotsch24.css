@@ -153,6 +153,10 @@ blockquote {
   max-height: 60vh;
 }
 
+.rs-searchbar-conatainer {
+  padding: 0rem;
+}
+
 .rs-searchbar div.space-y-1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -272,12 +276,12 @@ section.rs-searchbar {
   margin-right: auto;
   padding-left: calc(max(8px, (100vw - 800px) / 2));
   padding-right: calc(max(8px, (100vw - 800px) / 2));
-  margin-bottom: -90px !important;
+  margin-bottom: -78px !important;
   margin-top: 0rem !important;
   padding-bottom: 0rem !important;
   padding-top: 0.5rem !important;
   position: relative;
-  top: -80px;
+  top: -70px;
   background: transparent;;
 }
 
@@ -287,7 +291,7 @@ section.rs-searchbar {
     padding-bottom: 0.5rem !important;
     padding-top: 0.5rem !important;
     position: relative;
-    top: -54px;
+    top: -60px;
   }
 
   section.rs-searchbar {
@@ -321,6 +325,10 @@ div.hero-slider-block .cta-button {
 
 div.hero-slider-block .cta-button:hover {
   background-color: var(--cta-hero-pressed-color);
+}
+
+.rs-relatedpages-block h2 {
+  margin-bottom: 0px;
 }
 
 .rs-relatedpages-tile-container {
@@ -386,6 +394,9 @@ div.hero-slider-block .cta-button:hover {
   width: 96px;
   height: 64px;
   background-color: var(--cta-color);
+  border-width: 1px;
+  border-color: var(--cta-text-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .rs-relatedpages-icon {
