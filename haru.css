@@ -270,3 +270,9 @@ nav.table-of-contents-block a {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+  /* hide the tnc link */
+.page-footer {
+    a:nth-of-type(3) {
+        display:none;
+    }
+  }
