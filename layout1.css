@@ -2,6 +2,10 @@
     margin-bottom: 1rem !important;
 }
 
+.page-header.rs-header-onlyLogo {
+  position: relative;
+}
+
 .page-header .container {
     margin-bottom: 0rem !important;
 }
