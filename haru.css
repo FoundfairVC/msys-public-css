@@ -28,6 +28,10 @@
       }
   }
 
+.container.msys-wizard-block {
+    background-color: white;
+}
+
 .container.lead-form-block,
 .container.msys-wizard-block {
   max-width: 100% !important;

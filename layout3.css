@@ -29,6 +29,7 @@
 
 .container.msys-wizard-block {
   background-color: white;
+  padding-bottom: 40px !important;
 }
 
 /* fade out too large teasers */
