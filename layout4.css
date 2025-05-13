@@ -26,6 +26,11 @@
     }
   }
 
+
+.page-header.rs-header-onlyLogo {
+  position: relative;
+}
+
 .container.lead-form-block,
 .container.msys-wizard-block {
   max-width: 100% !important;
