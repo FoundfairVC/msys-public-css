@@ -500,6 +500,10 @@ div.hero-slider-block .cta-button:hover {
   }
 }
 
+.rs-template-list-slider div.will-change-transform {
+  overflow: visible;
+}
+
 div.rs-griditem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
   padding: 8px;
