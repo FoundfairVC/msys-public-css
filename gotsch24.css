@@ -404,6 +404,16 @@ div.hero-slider-block .cta-button:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 1024px) {
+  .rs-relatedpages-icon-background {
+    width: 192px !important;
+    height: 96px !important;
+  }
+  .rs-relatedpages-icon-container span {
+    font-size: 1.25rem;
+  }
+}
+
 .rs-relatedpages-icon {
   width: 100%;
   height: 100%;
