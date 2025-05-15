@@ -139,6 +139,11 @@ div.hero-slider-block {
 .rs-teaser .rs-teaser-image {
     width: 40%;
 }
+
+.rs-template-list-slider div.will-change-transform {
+  overflow: visible;
+}
+
 .rs-griditem.rs-teaser .rs-teaser-image, .rs-textwithmedialist.rs-teaser .rs-teaser-image {
     width: auto;
     margin-left: -15px;
@@ -368,6 +373,16 @@ nav.table-of-contents-block a {
   width: 96px;
   height: 64px;
   background-color: var(--cta-color);
+}
+
+@media (min-width: 1024px) {
+  .rs-relatedpages-icon-background {
+    width: 192px !important;
+    height: 96px !important;
+  }
+  .rs-relatedpages-icon-container span {
+    font-size: 1.25rem;
+  }
 }
 
 .rs-relatedpages-icon {
