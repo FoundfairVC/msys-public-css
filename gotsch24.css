@@ -520,7 +520,7 @@ div.hero-slider-block .cta-button:hover {
 }
 
 .text-with-media-list-block + .text-with-media-list-block {
-  margin-top: -40px;
+  margin-top: -32px;
 }
 
 .text-with-media-list-block.rs-highlighted + .text-with-media-list-block {
