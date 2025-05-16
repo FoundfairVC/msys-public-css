@@ -415,9 +415,12 @@ div.hero-slider-block .cta-button:hover {
 }
 
 .rs-relatedpages-icon-background {
-  width: 96px;
+  width: 64px;
   height: 64px;
-  background-color: var(--cta-color);
+  border-radius: 2rem;
+  padding: 4px;
+
+  background: linear-gradient(315deg, var(--cta-color), var(--cta-color), transparent);
   border-width: 1px;
   border-color: var(--cta-text-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
