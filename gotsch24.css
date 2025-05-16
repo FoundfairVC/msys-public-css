@@ -266,8 +266,8 @@ footer {
     div.rs-hero-slider-container {
         height: 480px !important;
         margin-bottom: -160px;
-        -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-        mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
     }
 
   .rs-heroslider-overlay {
