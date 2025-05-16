@@ -434,6 +434,16 @@ div.hero-slider-block .cta-button:hover {
   .rs-relatedpages-icon-container span {
     font-size: 1.25rem;
   }
+  .related-pages-block div[role="region"]
+  {
+    background: #ffffff66;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    margin-top: 40px;
+    .will-change-transform{
+      margin-top: -40px;
+    }
+  }
 }
 
 .rs-relatedpages-icon {
