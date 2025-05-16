@@ -538,10 +538,10 @@ div.hero-slider-block .cta-button:hover {
 
 div.rs-griditem.rs-teaser {
   border-radius: var(--image-border-radius) !important;
-  padding: 8px;
+  padding: 0px;
   background-color: var(--highlighted-background-color);
   background: var(--highlighted-background-color); /* White background */
-  border: 1px solid #aaa; /* Subtle border */
+  border: 0px solid #aaa; /* Subtle border */
   overflow: hidden; /* Ensure content stays inside */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
   max-width: 480px; /* Constrain width */
@@ -578,7 +578,7 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
 }
 
 .rs-teaser img {
-  border-radius: var(--image-border-radius);
+  border-radius: 0px;
 }
 
 .rs-header-link div {
@@ -722,11 +722,3 @@ section.template-list-block h2 {
 
 
 /* XXX */
-
-
-.rs-heroslider-overlay {
-    background: linear-gradient(to top, rgb(27 40 37 / 25%) 0, rgba(63, 71, 86, 0.05) 75%);
-    margin-top: -80px;
-    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-}
