@@ -19,6 +19,10 @@
     padding-top: 0rem;
 }
 
+section.container {
+  position: relative;
+}
+
 body {
   font-size: 0.875rem;
 }
@@ -244,6 +248,7 @@ footer {
   font-size: 1.25rem;
 }
 
+
 @media (max-width: 768px) {
   div.rs-hero-slider-container {
     height: 12rem !important;
@@ -254,8 +259,18 @@ footer {
 }
 
 @media (min-width: 768px) {
-  div.rs-hero-slider-container {
-    height: 320px !important;
+    div.rs-hero-slider-container {
+        height: 480px !important;
+        margin-bottom: -160px;
+        -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    }
+
+  .rs-heroslider-overlay {
+    background: linear-gradient(to top, rgb(27 40 37 / 25%) 0, rgba(63, 71, 86, 0.05) 75%);
+    margin-top: -80px;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   }
 }
 
@@ -405,10 +420,13 @@ div.hero-slider-block .cta-button:hover {
 }
 
 @media (min-width: 1024px) {
-  .rs-relatedpages-icon-background {
-    width: 192px !important;
-    height: 96px !important;
-  }
+    .rs-relatedpages-icon-background {
+        width: 96px !important;
+        height: 96px !important;
+        border-radius: 3rem;
+        padding: 12px;
+        background: linear-gradient(315deg, var(--cta-color), var(--cta-color), transparent);
+    }
   .rs-relatedpages-icon-container span {
     font-size: 1.25rem;
   }
@@ -696,4 +714,15 @@ section.template-list-block h2 {
         content: "Am Langendorfer Berg 16c, 18442 Langendorf";
     }
   }
+}
+
+
+/* XXX */
+
+
+.rs-heroslider-overlay {
+    background: linear-gradient(to top, rgb(27 40 37 / 25%) 0, rgba(63, 71, 86, 0.05) 75%);
+    margin-top: -80px;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
