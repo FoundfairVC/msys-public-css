@@ -239,6 +239,9 @@ div.hero-slider-block {
   background-color: var(--secondary-color);
   text-align: center;
 }
+.hero-slider-block div.will-change-transform {
+  overflow: visible;
+}
 
 footer {
   background-image: url(gotsch/footerback.jpg);
