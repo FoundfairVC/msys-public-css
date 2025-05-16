@@ -497,6 +497,22 @@ div.hero-slider-block .cta-button:hover {
 
 .text-with-media-list-block ~ .hero-slider-block {
   background: transparent;
+  div.rs-hero-slider-container {
+    height: 240px !important;
+    margin-bottom: 0px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 1));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 1));
+  }
+  .rs-heroslider-overlay {
+    background: linear-gradient(to top, rgb(27 40 37 / 25%) 0, rgba(63, 71, 86, 0.05) 75%);
+    margin-top: 20px;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 1));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 1));
+  }
+  .rs-heroslider-overlay p {
+      display: none;
+  }
 }
 
 .text-with-media-list-block ~ .rs-heroslider-overlay {
@@ -739,5 +755,7 @@ section.template-list-block h2 {
   }
 }
 
+.faq-block {
+  margin-top: 8px;
+}
 
-/* XXX */
