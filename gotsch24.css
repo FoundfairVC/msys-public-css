@@ -296,6 +296,10 @@ section.rs-searchbar {
   background: transparent;
 }
 
+.hero-slider-block + section {
+  background: transparent;
+}
+
 .hero-slider-block + section.rs-searchbar {
   max-width: 100% !important;
   width: 100%;
@@ -309,7 +313,7 @@ section.rs-searchbar {
   padding-top: 0.5rem !important;
   position: relative;
   top: -64px;
-  background: transparent;;
+  background: transparent;
 }
 
 @media (max-width: 768px) {
