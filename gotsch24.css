@@ -254,8 +254,11 @@ footer {
 
 @media (max-width: 768px) {
   div.rs-hero-slider-container {
-    height: 12rem !important;
+    height: 260px !important;
+    margin-bottom: -80px;
     overflow: visible;
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
   }
   .rs-heroslider-overlay p {
       display: none;
