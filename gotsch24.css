@@ -672,7 +672,7 @@ div.rs-listitem.rs-teaser a, .rs-relatedpages-link-button {
 
 @media (max-width: 512px) {
   div.rs-griditem.rs-teaser {
-    padding: 4px;
+    padding: 0px;
   }
 
   div.rs-griditem.rs-teaser .cta-button {
