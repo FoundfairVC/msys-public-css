@@ -298,6 +298,9 @@ section.rs-searchbar {
 
 .hero-slider-block + section {
   background: transparent;
+  h2 {
+    text-shadow: 2px 2px 20px #fff, 2px 2px 40px #fff;
+  }
 }
 
 .hero-slider-block + section.rs-searchbar {
