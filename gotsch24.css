@@ -785,3 +785,11 @@ section.template-list-block h2 {
   margin-top: 8px;
 }
 
+/* AI bot */
+footer + div {
+  .bg-transparent.z-50:nth-child(1) {
+    transform: translateX(0px) translateY(20px) !important;
+  }
+}
+
+
