@@ -187,6 +187,10 @@ div.hero-slider-block .cta-button:hover {
   background: rgba(58,58,58, 1);
 }
 
+.rs-relatedpages-tile figcaption:before {
+    content: " → ";
+}
+
 @media (min-width: 768px) {
   .rs-relatedpages-tile-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
