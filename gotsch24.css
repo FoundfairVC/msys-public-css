@@ -536,6 +536,23 @@ div.hero-slider-block .cta-button:hover {
   }
 }
 
+.text-with-media-list-block ol.list-number {
+    display:flex;
+    width: 100%;
+    align: center;
+    flex-direction: row;
+    justify-content: center;
+    li {
+        padding: 8px;
+    }
+}
+
+@media(max-width: 768px) {
+    .text-with-media-list-block ol.list-number {
+    flex-direction: column;
+}
+}
+
 @media (max-width: 512px) {
   .rs-heroslider-overlay h1 {
     font-size: 1.5rem;
