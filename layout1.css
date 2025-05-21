@@ -395,12 +395,12 @@ nav.table-of-contents-block a {
 
 @media (min-width: 768px) {
   .related-pages-block .rs-carousel-item {
-    flex-basis: 20%;
+    flex-basis: 25%;
   }
 }
 @media (min-width: 1024px) {
   .related-pages-block .rs-carousel-item {
-    flex-basis: 20%;
+    flex-basis: 25%;
   }
 }
 /* hide the tnc link */
