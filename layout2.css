@@ -390,6 +390,9 @@ section.rs-searchbar {
   background: var(--secondary-color);
 }
 
+.rs-searchbar-container {
+  padding: 0rem;
+}
 .hero-slider-block + section.rs-searchbar {
   max-width: 100% !important;
   width: 100%;

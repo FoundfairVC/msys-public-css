@@ -280,6 +280,9 @@ nav.table-of-contents-block a {
     background: transparent;
   }
   
+.rs-searchbar-container {
+  padding: 0rem;
+}
   .hero-slider-block + section.rs-searchbar {
     max-width: 100% !important;
     width: 100%;
