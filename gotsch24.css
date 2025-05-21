@@ -240,7 +240,8 @@ div.hero-slider-block {
   text-align: center;
 }
 .hero-slider-block div.will-change-transform {
-  overflow: visible;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
 footer {
