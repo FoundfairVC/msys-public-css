@@ -683,6 +683,7 @@ div.rs-griditem.rs-teaser .cta-button {
   text-decoration: none;
   border-radius: var(--cta-border-radius);
   transition: background-color 0.3s;
+  background: #00000000;
 }
 
 @media (min-width: 768px) {
