@@ -589,7 +589,7 @@ div.hero-slider-block .cta-button:hover {
 }
 
 .rs-template-list-slider div.will-change-transform {
-  overflow: visible;
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) {
