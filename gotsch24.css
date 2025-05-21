@@ -241,7 +241,7 @@ div.hero-slider-block {
 }
 .hero-slider-block div.will-change-transform {
   overflow-y: visible;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 footer {
