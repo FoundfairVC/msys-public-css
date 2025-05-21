@@ -141,7 +141,7 @@ div.hero-slider-block {
 }
 
 .rs-template-list-slider div.will-change-transform {
-  overflow: visible;
+  overflow: hidden;
 }
 
 .rs-griditem.rs-teaser .rs-teaser-image, .rs-textwithmedialist.rs-teaser .rs-teaser-image {

@@ -311,7 +311,7 @@ div.rs-griditem.rs-teaser {
 }
 
 .rs-template-list-slider div.will-change-transform {
-  overflow: visible;
+  overflow: hidden;
 }
 
 div.rs-listitem.rs-teaser {

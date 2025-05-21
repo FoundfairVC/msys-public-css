@@ -171,7 +171,7 @@ section.text-with-media-list-block.rs-highlighted .rs-teaser-body, .rs-purpose-t
 }
 
 .rs-template-list-slider div.will-change-transform {
-  overflow: visible;
+  overflow: hidden;
 }
 
 .rs-griditem.rs-teaser {
