@@ -792,4 +792,6 @@ footer + div {
   }
 }
 
-
+.rs-header-phone {
+    display: flex !important;
+}
