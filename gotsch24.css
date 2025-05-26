@@ -791,7 +791,3 @@ footer + div {
     transform: translateX(0px) translateY(20px) !important;
   }
 }
-
-.rs-header-phone {
-    display: flex !important;
-}
