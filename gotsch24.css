@@ -694,7 +694,7 @@ div.rs-griditem.rs-teaser .cta-button {
 
 @media (min-width: 768px) {
   div.rs-griditem.rs-teaser .cta-button {
-    display: block;
+    display: none;
   }
 }
 
@@ -715,9 +715,7 @@ div.rs-listitem.rs-teaser {
 div.rs-listitem.rs-teaser a, .rs-relatedpages-link-button {
   text-align: right;
   padding: 6px 8px;
-  background-color: var(--cta-color);
-  color: var(--cta-text-color);
-  text-transform: uppercase;
+  color: var(--cta-color);
 }
 
 @media (max-width: 768px) {
