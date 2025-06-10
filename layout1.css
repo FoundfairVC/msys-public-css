@@ -771,11 +771,6 @@ section.template-list-block h2 {
   a:nth-of-type(3) {
       display:none;
   }
-  .container div.items-start div:nth-child(1) {
-      div:nth-of-type(2)::after{
-        content: "Am Langendorfer Berg 16c, 18442 Langendorf";
-    }
-  }
 }
 
 .faq-block {
