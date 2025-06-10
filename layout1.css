@@ -669,7 +669,7 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
 
 /* Style the call-to-action button */
 div.rs-griditem.rs-teaser .cta-button {
-  display: none;
+  display: visible;
   width: calc(100% - 32px);
   margin: 2px auto;
   padding: 12px 16px;
@@ -687,7 +687,7 @@ div.rs-griditem.rs-teaser .cta-button {
 
 @media (min-width: 768px) {
   div.rs-griditem.rs-teaser .cta-button {
-    display: none;
+    display: visible;
   }
 }
 
