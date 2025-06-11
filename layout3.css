@@ -334,6 +334,10 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
   border-radius: var(--image-border-radius);
 }
 
+.rs-header-link {
+  font-size: 1.125rem;
+}
+
 .rs-header-link div {
   color: var(--header-text-color);
   border-color: var(--header-text-color);
