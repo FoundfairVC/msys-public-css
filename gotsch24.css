@@ -492,11 +492,13 @@ div.hero-slider-block .cta-button:hover {
   padding: 2px;
 }
 
-.related-pages-block .rs-carousel-item {
+.related-pages-block .rs-carousel-item,
+.related-pages-block .rs-carousel-icon {
   flex-basis: 102px;
 }
 @media (min-width: 440px) {
-  .related-pages-block .rs-carousel-item {
+  .related-pages-block .rs-carousel-item,
+  .related-pages-block .rs-carousel-icon {
     flex-basis: 25%;
   }
 }
