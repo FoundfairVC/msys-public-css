@@ -56,15 +56,6 @@ h1 {
   padding-bottom: 40px !important;
 }
 
-/* fade out too large teasers */
-section.text-with-media-list-block.rs-highlighted .rs-teaser-body, .rs-purpose-teaser .rs-teaser-body{
-  max-height: 27vh;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 0));
-
-  overflow: hidden;
-}
-
 @media (max-width: 768px) {
   section.text-with-media-list-block .rs-purpose-trust {
     p, blockquote, img, h4, h5, hr {
@@ -289,7 +280,7 @@ div.rs-textwithmedialist p {
     letter-spacing: -0.1px;
 }
 /* fade out too large teasers */
-section.text-with-media-list-block.rs-highlighted .rs-teaser-body, .rs-purpose-teaser .rs-teaser-body{
+section.text-with-media-list-block.rs-purpose-teaser .rs-teaser-body{
   max-height: 27vh;
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 0));
