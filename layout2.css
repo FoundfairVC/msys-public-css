@@ -350,6 +350,15 @@ div.rs-griditem.rs-teaser {
   overflow: hidden;
 }
 
+/* mobile hide carousel gradient and chevron buttons on template lists */
+@media (max-width: 768px) {
+  .rs-template-list-slider .rs-carousel-gradient-left,
+  .rs-template-list-slider .rs-carousel-gradient-right,
+  button.inline-flex {
+    visibility: hidden;
+  }
+}
+
 div.rs-listitem.rs-teaser {
     border-radius: var(--image-border-radius) !important;
     padding: 0px;
