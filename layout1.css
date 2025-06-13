@@ -724,8 +724,10 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
 }
 
 .cta-button:hover {
-  background-color: var(--cta-text-color);
-  color: var(--cta-color);
+  background-color: var(--cta-color);
+  background:var(--cta-color);
+  color: var(--cta-text-color);
+  border:  1px solid var(--cta-color)
 }
 
 /* Style the call-to-action button */
