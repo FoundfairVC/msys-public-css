@@ -26,6 +26,10 @@ body {
   font-size: 0.875rem;
 }
 
+.cta-button {
+  font-size: 1rem;
+}
+
 @media (min-width: 768px) {
   .container {
     padding-bottom: 1.5rem;
