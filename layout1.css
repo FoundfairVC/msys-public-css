@@ -18,6 +18,10 @@ section.container {
   position: relative;
 }
 
+section h2:first-child {
+  padding-top: 0.5rem;
+}
+
 body {
   font-size: 0.875rem;
 }
