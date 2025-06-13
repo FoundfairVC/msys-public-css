@@ -64,10 +64,10 @@ section.text-with-media-list-block.rs-highlighted {
 
 /* fade out too large teasers */
 section.text-with-media-list-block .rs-purpose-teaser .rs-teaser-body{
-  max-height: 27vh;
+  /*max-height: 27vh;
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 0));
-
+*/
   overflow: hidden;
 }
 
@@ -455,7 +455,7 @@ div.hero-slider-block .cta-button:hover {
   border-radius: 2rem;
   padding: 4px;
 
-  background: linear-gradient(315deg, var(--cta-color), var(--cta-color), white);
+  background: linear-gradient(315deg, var(--cta-pressed-color), var(--cta-pressed-color), white);
   border-width: 0px;
   border-color: var(--cta-text-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -467,7 +467,7 @@ div.hero-slider-block .cta-button:hover {
         height: 96px !important;
         border-radius: 3rem;
         padding: 12px;
-        background: linear-gradient(315deg, var(--cta-color), var(--cta-color), white);
+        background: linear-gradient(315deg, var(--cta-pressed-color), var(--cta-pressed-color), white);
     }
   .rs-relatedpages-icon-container span {
     font-size: 1.25rem;
