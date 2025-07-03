@@ -845,7 +845,7 @@ section.template-list-block h2 {
   }
   .container div.items-start div:nth-child(1) {
       div:nth-of-type(2)::after{
-        content: "Am Langendorfer Berg 16c, 18442 Langendorf";
+        content: "Am Langendorfer Berg 16c, 18442 Lüssow";
     }
   }
 }
