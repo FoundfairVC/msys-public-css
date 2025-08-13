@@ -731,6 +731,8 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
   padding: 12px 16px;
   transition: 0.5s;
   color: var(--cta-text-color);
+  font-weight: var(--cta-font-weight);
+  box-shadow: var(--cta-box-shadow);
 }
 
 .cta-button:hover {

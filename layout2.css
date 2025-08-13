@@ -146,6 +146,8 @@ nav.bread-crumbs-block {
     color: var(--cta-color);
     background-color: var(--cta-color);
     color: var(--cta-text-color);
+    font-weight: var(--cta-font-weight);
+    box-shadow: var(--cta-box-shadow);
   }
   
   .cta-button:hover {
