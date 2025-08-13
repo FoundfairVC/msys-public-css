@@ -1,3 +1,11 @@
+body {
+  font-size: 1.125rem;
+	line-height: 1.5;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 .container {
     max-width: 100% !important;
     width: 100%;
@@ -304,12 +312,6 @@ div.hero-slider-block .cta-button:hover {
   div.rs-hero-slider-container {
     height: 320px !important;
   }
-}
-
-.body {
-	font-size: 1.125rem;
-	line-height: 1.5;
-  font-family: var(--font-family);
 }
 
 div.rs-griditem.rs-teaser {

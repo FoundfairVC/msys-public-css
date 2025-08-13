@@ -30,6 +30,8 @@ section h2:first-child {
 body {
   font-size: 0.875rem;
   font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .cta-button {
