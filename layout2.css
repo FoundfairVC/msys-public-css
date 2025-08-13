@@ -111,6 +111,31 @@ nav.bread-crumbs-block {
   margin-right: 1.5rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+ 
+@media (min-width: 768px) {
+  .md\:block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none !important;    
+  }
+
+  .lg\:flex {
+    display: flex !important;
+  }
+}
+
 .page-header {
     border-color: var(--background-color) !important;
     background-color: var(--header-background-color);
