@@ -163,6 +163,13 @@ div.hero-slider-block {
 
 h1, h2, h3 {
   white-space: normal;
+  font-weight: 700;
+  color: var(--headline-text-color);
+}
+
+h4 {
+  font-weight: 700;
+  color: var(--headline-text-color);
 }
 
 @media (max-width: 768px) {
@@ -302,6 +309,7 @@ div.hero-slider-block .cta-button:hover {
 .body {
 	font-size: 1.125rem;
 	line-height: 1.5;
+  font-family: var(--font-family);
 }
 
 div.rs-griditem.rs-teaser {

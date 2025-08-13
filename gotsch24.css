@@ -29,6 +29,7 @@ section h2:first-child {
 
 body {
   font-size: 0.875rem;
+  font-family: var(--font-family);
 }
 
 .cta-button {
@@ -126,6 +127,13 @@ h1, h2, h3 {
     text-transform: uppercase;
     padding-bottom: 4px;
     font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: var(--headline-text-color);
+}
+
+h4 {
+  font-weight: 700;
+  color: var(--headline-text-color);
 }
 
 h1, h2 {
