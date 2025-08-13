@@ -175,7 +175,16 @@ h1, h2, h3 {
   color: var(--headline-text-color);
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 h4 {
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--headline-text-color);
 }
