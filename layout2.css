@@ -554,7 +554,7 @@ section.rs-searchbar {
 
 @media (min-width: 1024px) {
   .rs-relatedpages-icon-background {
-    width: 192px !important;
+    width: 168px !important;
     height: 96px !important;
   }
   .rs-relatedpages-icon-container span {
