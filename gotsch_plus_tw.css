@@ -1220,7 +1220,7 @@ html,
   letter-spacing: 0.1em;
 }
 
-.text-\[--button-basic-color\] {
+.text-\[--cta-text-color\] {
   color: var(--button-basic-color);
 }
 
