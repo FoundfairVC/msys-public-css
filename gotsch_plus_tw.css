@@ -1232,6 +1232,10 @@ html,
   color: var(--quaternary-color);
 }
 
+.hero-slider-block p {
+  color: var(--quaternary-color);
+}
+
 .text-\[--primary-color\] {
   color: var(--primary-color);
 }
@@ -2746,7 +2750,7 @@ div.rs-griditem.rs-teaser .rs-teaser-body-image {
 }
 
 .rs-teaser-body-content {
-  color: var(--text-color); /* Neutral text color */
+  color: var(--p-color); /* Neutral text color */
 }
 
 /* Adjust the content block */
