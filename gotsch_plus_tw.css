@@ -2192,7 +2192,6 @@ hr {
 blockquote {
     line-height: 24px;
     font-size: 20px;
-    padding-left: 20px;
     padding-bottom: 4px;
     font-weight: 500;
     color: var(--h1-color);
@@ -2201,7 +2200,6 @@ blockquote {
 .rs-searchbar blockquote{
   line-height: 20px;
   font-size: 16px;
-  padding-left: 20px;
   padding-bottom: 4px;
   font-weight: 500;
   color: var(--headline-text-color);
@@ -2379,6 +2377,7 @@ section.rs-searchbar {
 
 .hero-slider-block + section {
   background: transparent;
+  z-index: 101;
   h2 {
     text-shadow: 2px 2px 20px #fff, 2px 2px 40px #fff;
   }
