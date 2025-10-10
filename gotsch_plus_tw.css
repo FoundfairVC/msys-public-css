@@ -2126,6 +2126,10 @@ section.text-with-media-list-block div.grid {
         height: 100%;
         justify-content: space-between;
     }
+    button {
+        padding: 0px;
+        background: transparent;;
+    }
 }
 
 nav.table-of-contents-block .grid {
@@ -2444,6 +2448,11 @@ div.hero-slider-block .cta-button:hover {
 
 .rs-relatedpages-tile-container {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.rs-relatedpages-link-button, .rs-faq-item-button {
+  padding: 0px;
+  background: transparent;
 }
 
 .rs-relatedpages-tile figcaption {
