@@ -2139,12 +2139,10 @@ h1, h2, h3 {
     padding-bottom: 4px;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    color: var(--headline-text-color);
 }
 
 h4 {
   font-weight: 700;
-  color: var(--headline-text-color);
 }
 
 h1, h2 {
@@ -2186,7 +2184,7 @@ blockquote {
     padding-left: 20px;
     padding-bottom: 4px;
     font-weight: 500;
-    color: var(--headline-text-color);
+    color: var(--h1-color);
 }
 
 .rs-searchbar blockquote{
