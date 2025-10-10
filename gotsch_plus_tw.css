@@ -1224,8 +1224,12 @@ html,
   color: var(--button-basic-color);
 }
 
+.text-\[--cta-color\] {
+  color: var(--button-basic-color);
+}
+
 .text-\[--hero-text-color\] {
-  color: var(--quarternary-color);
+  color: var(--quaternary-color);
 }
 
 .text-\[--primary-color\] {
@@ -2739,6 +2743,10 @@ div.rs-griditem.rs-teaser .rs-teaser-body-image {
   display: block;
   position: absolute;
   top:32px;
+}
+
+.rs-teaser-body-content {
+  color: var(--text-color); /* Neutral text color */
 }
 
 /* Adjust the content block */
