@@ -2940,6 +2940,14 @@ footer + div {
     --tw-scale-y: 1.00 !important;
 }
 
-
-
-
+div.footer__bottom_legal > p:first-child {
+  /* Replace the original text with the required address */
+}
+div.footer__bottom_legal > p:first-child::before {
+  content: "Gotsch GmbH, Am Langendorfer Berg 16c, 18442 Lüssow";
+  white-space: pre-line;
+  display: block;
+}
+div.footer__bottom_navigation > a:nth-of-type(3) {
+  display: none !important;
+}
