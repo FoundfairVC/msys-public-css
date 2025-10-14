@@ -2086,7 +2086,7 @@ body {
 
 section.text-with-media-list-block, nav.bread-crumbs-block, nav.table-of-contents-block,
 section.msys-wizard-block {
-    background-color: var(--secondary-color);
+    background-color: var(--background-light-color);
 }
 
 section.text-with-media-list-block.rs-highlighted {
@@ -2336,7 +2336,7 @@ div.hero-slider-block {
   padding: 0 0px;
   margin-bottom: 0rem !important;
   padding-bottom: 0rem;
-  background-color: var(--secondary-color);
+  background-color: var(--background-light-color);
   text-align: center;
 }
 .hero-slider-block div.will-change-transform {
