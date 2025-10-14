@@ -2179,6 +2179,24 @@ h3 {
     }
 }
 
+div.rs_hero_block__content h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--hero-text-color, var(--quaternary-color));
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  div.rs_hero_block__content h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+  }
+}
+
 hr {
     color: inherit;
     border-top-width: 1px;
