@@ -2969,3 +2969,12 @@ div.footer__bottom_legal > p:first-child::before {
 div.footer__bottom_navigation > a:nth-of-type(3) {
   display: none !important;
 }
+
+@media only screen and (max-width: 768px) {
+  .rs-grid-cols-2 .rs_grid--3_of_12 {
+    width: calc(50% - var(--gutter-width) / 2) !important;
+    justify-items: center;
+    align-items: start;
+    margin-top: var(--element-margin-small) !important;
+  }
+}
