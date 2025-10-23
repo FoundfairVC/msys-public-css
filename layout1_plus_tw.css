@@ -2042,14 +2042,14 @@ section h2:first-child {
 }
 
 body {
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
   font-family: var(--font-family);
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
 .cta-button {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 @media (min-width: 768px) {
@@ -2059,7 +2059,7 @@ body {
   }
 
   body {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 }
 
@@ -2150,35 +2150,35 @@ h1, h2, h3 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
   font-weight: 700;
 }
 
 h1, h2 {
-    font-size: 1.75rem;
+    font-size: 1.75rem !important;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 @media (max-width: 768px) {
     h1, h2 {
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
         padding-bottom: 0px;
     }
     h3 {
-        font-size: 1rem;
+        font-size: 1rem !important;
         padding-bottom: 0px;
     }
 }
 
 div.rs_hero_block__content h1 {
-  font-size: 2.5rem;
+  font-size: 2.5rem !important;
   line-height: 1.1;
   font-weight: 700;
   text-transform: uppercase;
@@ -2188,7 +2188,7 @@ div.rs_hero_block__content h1 {
 
 @media (max-width: 768px) {
   div.rs_hero_block__content h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     line-height: 1.2;
     margin-bottom: 0.25rem;
     }
@@ -2210,7 +2210,7 @@ hr {
 
 blockquote {
     line-height: 24px;
-    font-size: 20px;
+    font-size: 20px !important;
     padding-left: 20px;
     padding-bottom: 4px;
     font-weight: 500;
@@ -2245,11 +2245,11 @@ blockquote {
 
 @media (max-width: 768px) {
     blockquote, .rs-searchbar blockquote {
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 20px;
     }
     .rs-searchbar h3, p {
-        font-size: 0.875rem;
+        font-size: 0.875rem !important;
     }
     .rs-searchbar div.space-y-1 {
       display: grid;
@@ -2263,7 +2263,7 @@ h5 {
     padding-left: 20px;
     margin: 10px 0 0 0;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 13px !important;
     line-height: 16px;
     color: var(--text-color);
 }
@@ -2312,7 +2312,7 @@ h5 {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 19px !important;
 }
 
 .page-header img {
@@ -2347,7 +2347,7 @@ footer {
 }
 
 .rs-heroslider-overlay p {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 
@@ -2509,7 +2509,7 @@ div.hero-slider-block .cta-button:hover {
         padding-left: 16px;
         text-shadow: none;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1rem !important;
         text-align: start;
   }
 }
@@ -2530,7 +2530,7 @@ div.hero-slider-block .cta-button:hover {
         padding-left: 16px;
         text-shadow: none;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1rem !important;
         text-align: start;
   }
 }
@@ -2556,7 +2556,7 @@ div.hero-slider-block .cta-button:hover {
         background: linear-gradient(315deg, var(--button-filled-background-color), var(--button-filled-background-color), white);
     }
   .rs-relatedpages-icon-container span {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
   }
   .related-pages-block div[role="region"]
   {
@@ -2571,8 +2571,8 @@ div.hero-slider-block .cta-button:hover {
 }
 
 .rs-relatedpages-icon {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   color: var(--button-filled-color);
   stroke-width: 1.5px;
   padding: 2px;
@@ -2690,7 +2690,7 @@ div.hero-slider-block .cta-button:hover {
 
 @media (max-width: 512px) {
   .rs-heroslider-overlay h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     line-height: 2rem;
   }
   .rs-heroslider-overlay p {
@@ -2700,13 +2700,13 @@ div.hero-slider-block .cta-button:hover {
 }
 
 .body {
-	font-size: 1.125rem;
+	font-size: 1.125rem !important;
 	line-height: 1.5;
 }
 
 @media (max-width: 768px) {
   .body {
-    font-size: 1rem;
+    font-size: 1rem !important;
     line-height: 1.5;
   }
 }

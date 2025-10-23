@@ -1,5 +1,5 @@
 body {
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
 	line-height: 1.5;
   font-family: var(--font-family);
   background-color: var(--background-color);
@@ -206,26 +206,26 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.75rem !important;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
   font-weight: 700;
   color: var(--headline-text-color);
 }
 
 @media (max-width: 768px) {
   h1, h2 {
-      font-size: 1.25rem;
+      font-size: 1.25rem !important;
       padding-bottom: 0px;
   }
   h3 {
-      font-size: 1rem;
+      font-size: 1rem !important;
       padding-bottom: 0px;
   }
 }
@@ -264,7 +264,7 @@ div.hero-slider-block .cta-button:hover {
         padding-left: 16px;
         text-shadow: none;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1rem !important;
         text-align: start;
 }
 
@@ -292,7 +292,7 @@ div.hero-slider-block .cta-button:hover {
         padding-left: 16px;
         text-shadow: none;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1rem !important;
         text-align: start;
   }
 }
@@ -313,7 +313,7 @@ div.hero-slider-block .cta-button:hover {
         padding-left: 16px;
         text-shadow: none;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1rem !important;
         text-align: start;
   }
 }
@@ -329,12 +329,12 @@ div.hero-slider-block .cta-button:hover {
 }
 
 .rs-heroslider-overlay p {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 @media (max-width: 512px) {
   .rs-heroslider-overlay h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
 }
 
@@ -393,7 +393,7 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
 }
 
 .rs-header-link {
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
 }
 
 .rs-header-link div {
@@ -506,7 +506,7 @@ div.rs-listitem.rs-teaser a, .rs-relatedpages-link-button {
 
 
 .rs-ddmenu-item {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
   line-height: 2rem;
 }
 
@@ -553,7 +553,7 @@ section.rs-searchbar {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .rs-searchbar h3 {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 .rs-searchbar .absolute {
   margin-top: 4px;
@@ -561,11 +561,11 @@ section.rs-searchbar {
 }
 @media (max-width: 768px) {
     blockquote, .rs-searchbar blockquote {
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 20px;
     }
     .rs-searchbar h3, p {
-        font-size: 0.875rem;
+        font-size: 0.875rem !important;
     }
     .rs-searchbar div.space-y-1 {
       display: grid;
@@ -599,12 +599,12 @@ section.rs-searchbar {
     height: 96px !important;
   }
   .rs-relatedpages-icon-container span {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
   }
 }
 .rs-relatedpages-icon {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   color: var(--cta-text-color);
   stroke-width: 1.5px;
   padding: 2px;
