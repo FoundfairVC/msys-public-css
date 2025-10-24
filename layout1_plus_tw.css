@@ -2948,3 +2948,7 @@ footer + div {
     margin-top: var(--element-margin-small) !important;
   }
 }
+
+.rs_header .header__container .header .header__logo img{
+  object-fit: contain !important;
+}
