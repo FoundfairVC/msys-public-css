@@ -2025,10 +2025,19 @@ input[aria-hidden="true"] {
     border-radius: 1rem;
     background: var(--background-light-color);
     box-shadow: var(--shadow-elevation-medium);
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .rs_grid__container {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 .container {
@@ -2086,6 +2095,19 @@ body {
 .container.msys-wizard-block {
   background-color: white;
   padding-bottom: 40px !important;
+}
+
+.rs_responsive_navigation .rs_responsive_navigation__main>li.is_selected>a:after {
+    background: var(--button-basic-color);
+    bottom: 1px;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    left: 15px;
+    position: absolute;
+    transform: scaleX(1);
+    transform-origin: left;
+    width: 40px;
 }
 
 section.text-with-media-list-block, nav.bread-crumbs-block, nav.table-of-contents-block,
