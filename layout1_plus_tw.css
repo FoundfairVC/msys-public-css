@@ -2158,17 +2158,12 @@ h4 {
   font-weight: 700;
 }
 
-h1, h2 {
-    font-size: 1.75rem !important;
-}
-
 h3 {
   font-size: 1.25rem !important;
 }
 
 @media (max-width: 768px) {
     h1, h2 {
-        font-size: 1.25rem !important;
         padding-bottom: 0px;
     }
     h3 {
