@@ -2947,3 +2947,7 @@ footer + div {
 .rs_header .header__container .header .header__logo img{
   object-fit: contain !important;
 }
+
+div.footer__bottom_navigation > a:nth-of-type(3) {
+  display: none !important;
+}

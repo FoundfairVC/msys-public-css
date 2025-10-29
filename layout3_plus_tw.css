@@ -2632,3 +2632,7 @@ section.rs-searchbar {
       display:none;
   }
 }
+
+div.footer__bottom_navigation > a:nth-of-type(3) {
+  display: none !important;
+}
