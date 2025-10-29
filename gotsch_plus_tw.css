@@ -2966,7 +2966,7 @@ div.footer__bottom_legal > p:first-child::before {
   white-space: pre-line;
   display: block;
 }
-div.footer__bottom_navigation > a:nth-of-type(3) {
+div.footer__bottom_navigation p > a:nth-of-type(3) {
   display: none !important;
 }
 
