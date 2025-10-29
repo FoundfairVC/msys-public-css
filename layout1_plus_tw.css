@@ -2951,3 +2951,7 @@ footer + div {
 div.footer__bottom_navigation > a:nth-of-type(3) {
   display: none !important;
 }
+
+.rs_blurb--basic .rs_blurb__container .rs_blurb__image img {
+  object-fit: scale-down !important;
+}
