@@ -2642,6 +2642,6 @@ div.footer__bottom_navigation p > a:nth-of-type(3) {
 }
 
 .rs_hero_block--basic .rs_hero_block__container .rs_hero_block__content {
-    padding-bottom: 10vw !important;
-    padding-top: 5vw !important;
+    padding-bottom: 10vh !important;
+    padding-top: 5vh !important;
 }
