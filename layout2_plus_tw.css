@@ -3003,3 +3003,8 @@ div.footer__bottom_navigation p > a:nth-of-type(3) {
 .rs_blurb--basic .rs_blurb__container .rs_blurb__image img {
   object-fit: scale-down !important;
 }
+
+.rs_hero_block--basic .rs_hero_block__container .rs_hero_block__content {
+    padding-bottom: 10vw !important;
+    padding-top: 5vw !important;
+}
