@@ -2850,7 +2850,7 @@ div.rs-griditem.rs-teaser .rs-teaser-body-content {
  }}
 
 .cta-button {
-  background: linear-gradient(315deg, var(--button-special-background-color), var(--button-special-background-color), var(--button-special-background-color), var(--button-special-background-color), white);
+  background: var(--button-special-background-color);
   border: 0px solid var(--button-basic-color);
   padding: 12px 16px;
   transition: 0.5s;
@@ -3007,4 +3007,9 @@ div.footer__bottom_navigation p > a:nth-of-type(3) {
 .rs_hero_block--basic .rs_hero_block__container .rs_hero_block__content {
     padding-bottom: 10vh !important;
     padding-top: 5vh !important;
+}
+
+input:invalid, textarea:invalid {
+    background-color: #ffffff;
+    border-color: #f0dddd;
 }

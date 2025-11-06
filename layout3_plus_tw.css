@@ -2645,3 +2645,8 @@ div.footer__bottom_navigation p > a:nth-of-type(3) {
     padding-bottom: 10vh !important;
     padding-top: 5vh !important;
 }
+
+input:invalid, textarea:invalid {
+    background-color: #ffffff;
+    border-color: #f0dddd;
+}
