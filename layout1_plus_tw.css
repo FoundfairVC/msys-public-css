@@ -2966,6 +2966,6 @@ div.footer__bottom_navigation p > a:nth-of-type(3) {
 }
 
 input:invalid, textarea:invalid {
-    background-color: #ffffff;
-    border-color: #f0dddd;
+    background-color: #ffffff !important;
+    border-color: #f0dddd !important;
 }
