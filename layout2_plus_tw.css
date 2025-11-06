@@ -2094,6 +2094,10 @@ body {
   }
 }
 
+.container.lead-form-block {
+  padding-top: 1rem !important;
+}
+
 .container.lead-form-block,
 .container.msys-wizard-block {
   max-width: 100% !important;
