@@ -2976,3 +2976,7 @@ h3.rs_pos_element__title {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
 }
+
+div.header-upgrade a {
+  color: var(--header-menu-bar-a-color) !important;
+}
