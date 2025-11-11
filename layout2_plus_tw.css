@@ -3032,3 +3032,7 @@ h3.rs_pos_element__title {
 div.header-upgrade a {
   color: var(--header-menu-bar-a-color) !important;
 }
+
+.rs_header.is_scrolled a {
+    color: var(--one-row-header-a-on-scroll-type-color) !important;
+}
