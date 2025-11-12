@@ -2961,6 +2961,11 @@ div.footer__bottom_navigation p > a:nth-of-type(3) {
     padding-top: 5vh !important;
 }
 
+.rs_hero_block--basic.small .rs_hero_block__container .rs_hero_block__content {
+    padding-bottom: 16px !important;
+    padding-top: 16px !important;
+}
+
 input:invalid, textarea:invalid {
     background-color: #ffffff !important;
     border-color: #f0dddd !important;
