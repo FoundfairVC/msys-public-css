@@ -3001,3 +3001,7 @@ div.header-upgrade a {
 .rs_pos_search_block {
     background: var(--highlighted-container-background) !important;
 }
+
+.rs_header.is_scrolled {
+    background: var(--header-menu-bar-background-color) !important;
+}
