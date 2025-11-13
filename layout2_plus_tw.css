@@ -3040,3 +3040,7 @@ div.header-upgrade a {
 .rs_teaser--basic.rs_teaser--image_left.boxed, .rs_teaser--basic.rs_teaser--image_top.boxed {
   background: oklch(from var(--background-light-color) max(0.9,l) c h) !important;
 }
+
+.rs_header.is_scrolled {
+    background: var(--header-menu-bar-background-color) !important;
+}
