@@ -2966,6 +2966,10 @@ div.footer__bottom_navigation p > a:nth-of-type(3) {
     padding-top: 16px !important;
 }
 
+.rs_hero_block--basic .rs_hero_block__container .rs_hero_block__content .rs_hero_block__headline p {
+  color: var(--hero-text-color, var(--quaternary-color)) !important;
+}
+
 input:invalid, textarea:invalid {
     background-color: #ffffff !important;
     border-color: #f0dddd !important;
@@ -2992,4 +2996,8 @@ div.header-upgrade a {
 
 .rs_teaser--basic.rs_teaser--image_left.boxed, .rs_teaser--basic.rs_teaser--image_top.boxed {
   background: oklch(from var(--background-light-color) max(0.9,l) c h) !important;
+}
+
+.rs_pos_search_block {
+    background: var(--highlighted-container-background) !important;
 }
