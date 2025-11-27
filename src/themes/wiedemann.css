@@ -1,0 +1,94 @@
+/* Wiedemann Theme Overrides */
+
+section[id="block-678e1301804dd500018dac3d"] figcaption {
+    position: absolute !important;
+    bottom: -16px !important;
+    left: 10%;
+    width: 80%;
+    background: grey;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-shadow: 0px 0px 0px #00000000;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+section[id="block-678e1301804dd500018dac3d"] figure {
+    margin-bottom: 32px;
+}
+
+.rs-heroslider-overlay .container {
+    position: absolute;
+    bottom: -32px;
+    height: auto;
+    width: auto;
+    left: 10%;
+    z-index: 10;
+    overflow: visible;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    box-shadow: 2px 2px 4px #eee;
+}
+
+.hero-slider-block div {
+    overflow: visible;
+}
+
+div.rs-griditem.rs-teaser {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+div.rs-griditem.rs-teaser .rs-teaser-body-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+/* Wiedemann specific MUI overrides */
+.mui-wvyiwg {
+    background-color: #00000022;
+}
+
+.mui-wvyiwg:nth-child(1) {
+    background-color: lightcoral !important;
+}
+
+.mui-wvyiwg:nth-child(2) {
+    background-color: lightsalmon !important;
+}
+
+.mui-wvyiwg:nth-child(3) {
+    background-color: lightgoldenrodyellow !important;
+}
+
+.mui-wvyiwg:nth-child(4) {
+    background-color: lightcyan !important;
+}
+
+.mui-wvyiwg:nth-child(5) {
+    background-color: lightblue !important;
+}
+
+.mui-wvyiwg:nth-child(6) {
+    background-color: lightskyblue !important;
+}
+
+.mui-wvyiwg:nth-child(7) {
+    background-color: lightgreen !important;
+}
+
+.mui-wvyiwg:nth-child(8) {
+    background-color: lightseagreen !important;
+}
+
+.mui-fw43dl {
+    background-color: #00000000;
+    height: 850px !important;
+}

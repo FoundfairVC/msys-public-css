@@ -1,0 +1,14 @@
+{
+  "name": "msys-public-css",
+  "version": "1.0.0",
+  "description": "Modular CSS build system for MSYS themes",
+  "scripts": {
+    "build": "./build.sh",
+    "dev": "./build.sh && echo 'CSS files built successfully!'",
+    "clean": "rm -rf dist/",
+    "watch": "chokidar 'src/**/*.css' -c './build.sh'"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0"
+  }
+}

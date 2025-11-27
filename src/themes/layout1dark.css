@@ -1,3 +1,5 @@
 /* Layout1 Dark Theme Overrides - extends Layout1 */
-
+.rs_header.is_scrolled a, .rs_header.is_scrolled .rs_blurb__content {
+    color: var(--one-row-header-contact-a-on-scroll-color) !important;
+}
 /* Same as layout1.css but for dark theme variant */

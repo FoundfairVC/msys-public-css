@@ -1,0 +1,66 @@
+/* Layout4 Theme Overrides */
+
+@font-face {
+    font-family: Assistant;
+    src: url(assistant.woff2);
+}
+
+.container {
+    padding-left: calc(max(8px,(100vw - 1200px) / 2));
+    padding-right: calc(max(8px,(100vw - 1200px) / 2));
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+}
+
+.page-header.rs-header-onlyLogo {
+    position: relative;
+}
+
+/* Layout4 specific sections */
+section.text-with-media-list-block, 
+nav.bread-crumbs-block, 
+nav.table-of-contents-block,
+section.msys-wizard-block {
+    color: var(--primary-color);
+}
+
+h1, h2, h3 {
+    white-space: normal;
+    font-family: 'Assistant', 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.25rem;
+        padding-bottom: 0px;
+    }
+    h3 {
+        font-size: 1rem;
+        padding-bottom: 0px;
+    }
+}
+
+.template-list-block h2, .related-pages-block h2, .text-with-media-list-block h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-weight: 900;
+}
+
+.template-list-block h3, .related-pages-block h3, .text-with-media-list-block h3 {
+    font-weight: 400;
+}
+
+/* Layout4 specific teaser styling */
+section.text-with-media-list-block.rs-highlighted .rs-teaser-body, 
+.rs-purpose-teaser .rs-teaser-body {
+    max-height: 27vh;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 0));
+    overflow: hidden;
+}
