@@ -1,0 +1,36 @@
+/* Gotsch Plus TW Theme Overrides */
+
+:root {
+    --cta-border-radius: 0.375rem;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(gotsch/oswald-v49-latin-500.woff2);
+}
+
+.container {
+    padding-left: calc(max(8px,(100vw - 1200px) / 2));
+    padding-right: calc(max(8px,(100vw - 1200px) / 2));
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+
+body {
+    font-size: 0.875rem;
+}
+
+.cta-button {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}

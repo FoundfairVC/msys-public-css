@@ -1,0 +1,18 @@
+/* Layout3 Theme Overrides */
+
+body {
+    font-size: 1.125rem !important;
+    line-height: 1.5;
+}
+
+.container {
+    padding-left: calc(max(8px,(100vw - 1500px) / 2));
+    padding-right: calc(max(8px,(100vw - 1500px) / 2));
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+}

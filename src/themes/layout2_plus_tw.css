@@ -1,0 +1,67 @@
+/* Layout2 Plus TW Theme Overrides */
+
+.rs_grid__container {
+    border-radius: 1rem;
+    background: var(--background-light-color);
+    box-shadow: var(--shadow-elevation-medium);
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.container {
+    max-width: calc(100% - 16px) !important;
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
+    background: var(--background-light-color);
+    box-shadow: var(--shadow-elevation-medium);
+    padding-left: calc(max(8px,(100vw - 1200px) / 2));
+    padding-right: calc(max(8px,(100vw - 1200px) / 2));
+    margin-bottom: 16px !important;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 1rem;
+}
+
+div.rs-hero-slider-container .container {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .rs_grid__container {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .container {
+        max-width: calc(100% - 32px) !important;
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
+}
+
+body {
+    font-size: 0.875rem !important;
+}
+
+.cta-button {
+    font-size: 1rem !important;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1rem !important;
+    }
+}
+
+.container.lead-form-block {
+    padding-top: 1rem !important;
+}

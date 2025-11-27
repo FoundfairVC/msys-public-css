@@ -1,0 +1,58 @@
+/* Layout2 Theme Overrides */
+
+.container {
+    padding-left: calc(max(4px,(100vw - 1170px) / 2));
+    padding-right: calc(max(4px,(100vw - 1170px) / 2));
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+}
+
+/* Layout2 specific typography */
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--headline-text-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--headline-text-color);
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--headline-text-color);
+}
+
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.25rem;
+        padding-bottom: 0px;
+    }
+    h3 {
+        font-size: 1rem;
+        padding-bottom: 0px;
+    }
+}
+
+/* Layout2 specific sections */
+section.related-pages-block {
+    background-color: var(--secondary-color);
+}
