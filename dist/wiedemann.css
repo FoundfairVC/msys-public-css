@@ -1,0 +1,223 @@
+/* Common base styles - shared across all themes */
+
+:root {
+    --link-font-weight: 500;
+}
+
+/* Common body styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Base container styles - will be overridden by theme-specific values */
+.container {
+    max-width: 100% !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem !important;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+section.container {
+    position: relative;
+}
+
+section h2:first-child {
+    padding-top: 0.5rem;
+}
+
+/* Common specialized containers */
+.container.lead-form-block,
+.container.msys-wizard-block {
+    max-width: 100% !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc(max(8px,(100vw - 1024px) / 2));
+    padding-right: calc(max(8px,(100vw - 1024px) / 2));
+}
+
+.container.msys-wizard-block {
+    background-color: white;
+    padding-bottom: 40px !important;
+}
+
+/* Common section backgrounds */
+section.text-with-media-list-block, 
+nav.bread-crumbs-block, 
+nav.table-of-contents-block,
+section.msys-wizard-block {
+    background-color: var(--secondary-color);
+}
+
+section.text-with-media-list-block.rs-highlighted {
+    background-color: var(--highlighted-background-color);
+}
+
+/* Common responsive behavior */
+@media (max-width: 768px) {
+    section.text-with-media-list-block .rs-purpose-trust {
+        p, blockquote, img, h4, h5, hr {
+            display: none;
+        }
+        .mt-2 {
+            margin-top: 0px !important;
+        }
+        gap: 0px;
+    }
+}
+
+/* Common teaser fade effect */
+section.text-with-media-list-block .rs-purpose-teaser .rs-teaser-body {
+    max-height: 27vh;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 0));
+    overflow: hidden;
+}
+
+/* Common grid alignment */
+section.text-with-media-list-block div.grid {
+    align-items: stretch;
+}
+
+section.text-with-media-list-block div.grid a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+section.text-with-media-list-block div.grid .rs-textwithmedialist {
+    height: 100%;
+}
+
+/* Common table of contents styles */
+nav.table-of-contents-block .grid {
+    grid-template-rows: 1fr;
+}
+
+/* Common form validation styles */
+input:invalid, textarea:invalid {
+    background-color: #ffffff !important;
+    border-color: #f0dddd !important;
+}
+
+/* Common component styles */
+h3.rs_pos_element__title {
+    font-size: 1rem !important;
+}
+
+.rs_pos_element__text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+}
+
+.rs_blurb--basic .rs_blurb__container .rs_blurb__image img {
+    object-fit: scale-down !important;
+}
+
+.rs_hero_block--basic .rs_hero_block__container .rs_hero_block__content {
+    padding-bottom: 10vh !important;
+    padding-top: 5vh !important;
+}
+/* Theme-specific overrides */
+/* Wiedemann Theme Overrides */
+
+section[id="block-678e1301804dd500018dac3d"] figcaption {
+    position: absolute !important;
+    bottom: -16px !important;
+    left: 10%;
+    width: 80%;
+    background: grey;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-shadow: 0px 0px 0px #00000000;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+section[id="block-678e1301804dd500018dac3d"] figure {
+    margin-bottom: 32px;
+}
+
+.rs-heroslider-overlay .container {
+    position: absolute;
+    bottom: -32px;
+    height: auto;
+    width: auto;
+    left: 10%;
+    z-index: 10;
+    overflow: visible;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    box-shadow: 2px 2px 4px #eee;
+}
+
+.hero-slider-block div {
+    overflow: visible;
+}
+
+div.rs-griditem.rs-teaser {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+div.rs-griditem.rs-teaser .rs-teaser-body-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+/* Wiedemann specific MUI overrides */
+.mui-wvyiwg {
+    background-color: #00000022;
+}
+
+.mui-wvyiwg:nth-child(1) {
+    background-color: lightcoral !important;
+}
+
+.mui-wvyiwg:nth-child(2) {
+    background-color: lightsalmon !important;
+}
+
+.mui-wvyiwg:nth-child(3) {
+    background-color: lightgoldenrodyellow !important;
+}
+
+.mui-wvyiwg:nth-child(4) {
+    background-color: lightcyan !important;
+}
+
+.mui-wvyiwg:nth-child(5) {
+    background-color: lightblue !important;
+}
+
+.mui-wvyiwg:nth-child(6) {
+    background-color: lightskyblue !important;
+}
+
+.mui-wvyiwg:nth-child(7) {
+    background-color: lightgreen !important;
+}
+
+.mui-wvyiwg:nth-child(8) {
+    background-color: lightseagreen !important;
+}
+
+.mui-fw43dl {
+    background-color: #00000000;
+    height: 850px !important;
+}

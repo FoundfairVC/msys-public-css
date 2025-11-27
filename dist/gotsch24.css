@@ -1,0 +1,169 @@
+/* Common base styles - shared across all themes */
+
+:root {
+    --link-font-weight: 500;
+}
+
+/* Common body styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Base container styles - will be overridden by theme-specific values */
+.container {
+    max-width: 100% !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem !important;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+section.container {
+    position: relative;
+}
+
+section h2:first-child {
+    padding-top: 0.5rem;
+}
+
+/* Common specialized containers */
+.container.lead-form-block,
+.container.msys-wizard-block {
+    max-width: 100% !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc(max(8px,(100vw - 1024px) / 2));
+    padding-right: calc(max(8px,(100vw - 1024px) / 2));
+}
+
+.container.msys-wizard-block {
+    background-color: white;
+    padding-bottom: 40px !important;
+}
+
+/* Common section backgrounds */
+section.text-with-media-list-block, 
+nav.bread-crumbs-block, 
+nav.table-of-contents-block,
+section.msys-wizard-block {
+    background-color: var(--secondary-color);
+}
+
+section.text-with-media-list-block.rs-highlighted {
+    background-color: var(--highlighted-background-color);
+}
+
+/* Common responsive behavior */
+@media (max-width: 768px) {
+    section.text-with-media-list-block .rs-purpose-trust {
+        p, blockquote, img, h4, h5, hr {
+            display: none;
+        }
+        .mt-2 {
+            margin-top: 0px !important;
+        }
+        gap: 0px;
+    }
+}
+
+/* Common teaser fade effect */
+section.text-with-media-list-block .rs-purpose-teaser .rs-teaser-body {
+    max-height: 27vh;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 0));
+    overflow: hidden;
+}
+
+/* Common grid alignment */
+section.text-with-media-list-block div.grid {
+    align-items: stretch;
+}
+
+section.text-with-media-list-block div.grid a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+section.text-with-media-list-block div.grid .rs-textwithmedialist {
+    height: 100%;
+}
+
+/* Common table of contents styles */
+nav.table-of-contents-block .grid {
+    grid-template-rows: 1fr;
+}
+
+/* Common form validation styles */
+input:invalid, textarea:invalid {
+    background-color: #ffffff !important;
+    border-color: #f0dddd !important;
+}
+
+/* Common component styles */
+h3.rs_pos_element__title {
+    font-size: 1rem !important;
+}
+
+.rs_pos_element__text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+}
+
+.rs_blurb--basic .rs_blurb__container .rs_blurb__image img {
+    object-fit: scale-down !important;
+}
+
+.rs_hero_block--basic .rs_hero_block__container .rs_hero_block__content {
+    padding-bottom: 10vh !important;
+    padding-top: 5vh !important;
+}
+/* Theme-specific overrides */
+/* Gotsch24 Theme Overrides */
+
+@font-face {
+    font-family: Oswald;
+    src: url(gotsch/oswald-v49-latin-500.woff2);
+}
+
+.container {
+    padding-left: calc(max(8px,(100vw - 1200px) / 2));
+    padding-right: calc(max(8px,(100vw - 1200px) / 2));
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+
+body {
+    font-size: 0.875rem;
+}
+
+.cta-button {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}
+
+/* Gotsch24 specific: commented out teaser fade effect */
+section.text-with-media-list-block .rs-purpose-teaser .rs-teaser-body {
+    /* max-height: 27vh; */
+    /* -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0)); */
+    /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20vh, rgba(0, 0, 0, 0)); */
+    overflow: hidden;
+}
