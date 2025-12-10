@@ -32,7 +32,8 @@ section h2:first-child {
 
 /* Common specialized containers */
 .container.lead-form-block,
-.container.msys-wizard-block {
+.container.msys-wizard-block,
+.rs_calculator__container {
     max-width: 100% !important;
     width: 100%;
     margin-left: auto;
