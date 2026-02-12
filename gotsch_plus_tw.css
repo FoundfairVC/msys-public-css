@@ -2448,6 +2448,7 @@ div.hero-slider-block .cta-button {
   display: block;
   margin: 8px auto;
   padding: 12px 16px;
+  font-size: 24px;
   border-color: var(--button-basic-color);
   border: 0px;
   border-style: solid;
