@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", Georgia, serif;
+}
