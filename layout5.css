@@ -30,9 +30,19 @@ h1, h2, h3 {
 }
 
 .section-trust-badges {
+    border-bottom: 1px solid #e5e7eb;
+    
     .rs_blurb__image {
-        width: 40px;
+        width: 40px !important;
+        max-width: 40px !important;
+        min-width: 40px !important;
         height: auto;
+        
+        img {
+            width: 40px !important;
+            max-width: 40px !important;
+            min-width: 40px !important;
+        }
     }
     .rs_blurb__content {
         font-size: 0.875rem;
