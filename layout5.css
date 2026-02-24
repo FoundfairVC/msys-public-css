@@ -44,5 +44,21 @@ h1, h2, h3 {
 }
 
 .section-checklist {
-    
+    ul {
+        list-style: none;
+        padding-left: 0;
+        
+        li {
+            padding-left: 1.5em;
+            position: relative;
+            
+            &::before {
+                content: "✓";
+                color: #22c55e;
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
 }
