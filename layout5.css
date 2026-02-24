@@ -6,3 +6,43 @@
 h1, h2, h3 {
     font-family: "Playfair Display", Georgia, serif;
 }
+
+.rs_pos_search_block {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.rs_button {
+    border-radius: 8px !important;
+}
+
+.section-user-comments {
+    h4 {
+        color: var(--color-secondary);
+        text-align: left !important;
+    }
+    ul {
+        li {
+            padding-left: 8px;
+        }
+    }
+}
+
+.section-trust-badges {
+    .rs_blurb__image {
+        width: 40px;
+        height: auto;
+    }
+    .rs_blurb__content {
+        font-size: 0.875rem;
+    }
+}
+
+.section-process-steps-vertical {
+
+}
+
+.section-checklist {
+    
+}
