@@ -130,3 +130,11 @@ h1, h2, h3 {
         font-size: 1.125rem;
     }
 }
+
+.rs-footer {
+    background-color: var(--footer-background-color) !important;
+    color: var(--footer-overlay-color) !important;
+    a {
+        color: var(--footer-overlay-color) !important;
+    }
+}
