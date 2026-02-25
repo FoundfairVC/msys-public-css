@@ -9,8 +9,7 @@
 
 .rs_header::before {
     content: '24/7 Notfall: 030 - 123 456 78';
-    display: flex;
-    align-items: center;
+    display: block;
     width: 100%;
     padding: 8px 16px;
     background-color: var(--primary-color);
@@ -20,9 +19,11 @@
 .rs_header::after {
     content: 'Einfühlsam. Persönlich. Immer für Sie da.';
     position: absolute;
-    top: 8px;
-    right: 16px;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
     color: #ffffff;
+    pointer-events: none;
 }
 
 h1, h2, h3 {
