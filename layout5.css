@@ -3,29 +3,6 @@
     src: url(PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
 }
 
-.rs_header {
-    position: relative;
-}
-
-.rs_header::before {
-    content: '24/7 Notfall: 030 - 123 456 78';
-    display: block;
-    width: 100%;
-    padding: 8px 16px;
-    background-color: var(--primary-color);
-    color: #ffffff;
-}
-
-.rs_header::after {
-    content: 'Einfühlsam. Persönlich. Immer für Sie da.';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 8px 16px;
-    color: #ffffff;
-    pointer-events: none;
-}
-
 h1, h2, h3 {
     font-family: "Playfair Display", Georgia, serif;
 }
@@ -46,10 +23,11 @@ h1, h2, h3 {
     .rs_pos_element__icon.fa {
         background-color: var(--primary-color) !important;
         color: #ffffff !important;
+        font-weight: 500 !important;
     }
 
     .rs_pos_element__icon.fa:hover {
-        background-color: transparent !important;
+        background-color: #00000066 !important;
         color: var(--primary-color) !important;
     }
 }
