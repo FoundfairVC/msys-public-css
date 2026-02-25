@@ -7,10 +7,30 @@ h1, h2, h3 {
     font-family: "Playfair Display", Georgia, serif;
 }
 
+
+
 .rs_pos_search_block {
     background: none !important;
     border: none !important;
     box-shadow: none !important;
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .rs_pos_element__icon.fa {
+        background-color: var(--primary-color) !important;
+        color: #ffffff !important;
+    }
+
+    .rs_pos_element__icon.fa:hover {
+        background-color: transparent !important;
+        color: var(--primary-color) !important;
+    }
 }
 
 .rs_button {
@@ -19,13 +39,21 @@ h1, h2, h3 {
 
 .section-user-comments {
     h4 {
-        color: var(--color-secondary);
+        color: #c69c53 !important;
         text-align: left !important;
+        margin-left: 1rem;
     }
     ul {
+        padding-left: 1rem;
+        list-style-type: none;
+
         li {
-            padding-left: 8px;
+            content: "- ";
         }
+    }
+    blockquote {
+        margin: 1rem 1rem !important;
+        color: #1f242e;
     }
 }
 
@@ -36,12 +64,16 @@ h1, h2, h3 {
         width: 40px !important;
         max-width: 40px !important;
         min-width: 40px !important;
-        height: auto;
+        height: 40px !important;
+        border-radius: 50% !important;
+        background-color: var(--color-tertiary) !important;
+        padding: 4px !important;
         
         img {
-            width: 40px !important;
-            max-width: 40px !important;
-            min-width: 40px !important;
+            width: 32px !important;
+            max-width: 32px !important;
+            min-width: 32px !important;
+            height: 32px !important;
         }
     }
     .rs_blurb__content {
@@ -61,6 +93,8 @@ h1, h2, h3 {
         li {
             padding-left: 1.5em;
             position: relative;
+            font-size: 1.125rem;
+            line-height: 1.5;
             
             &::before {
                 content: "✓";
@@ -70,5 +104,16 @@ h1, h2, h3 {
                 left: 0;
             }
         }
+    }
+}
+
+.section-rounded-borders {
+    border-radius: 12px !important;
+}
+
+.section-teaser {
+    p {
+        color: #ffffff;
+        font-size: 1.125rem;
     }
 }
