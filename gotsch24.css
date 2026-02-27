@@ -913,3 +913,41 @@ footer + div {
     --tw-scale-x: 1.00 !important;
     --tw-scale-y: 1.00 !important;
 }
+
+/* hide marker alternative lead form */
+.marker-alternative-lead-form {
+    display: none;
+}
+
+/* style first element after marker */
+.marker-alternative-lead-form + * {
+    background-color: #20398e;
+    color: white
+    /* set svg color to white inside element after marker */
+    svg {
+      color: white;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    input, textarea {
+        background-color: #ffffff44 !important;
+        border-color: #f0dddd !important;
+        color: #ffffff;
+    }
+    
+    input:invalid, textarea:invalid {
+        background-color: #ffffff44 !important;
+        border-color: #f0dddd !important;
+        color: #ffffff;
+    }
+
+    /* placeholder text color */
+    input::placeholder, textarea::placeholder {
+        color: #cccccc;
+        opacity: 1;
+    }
+}
+

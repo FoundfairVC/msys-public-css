@@ -142,7 +142,15 @@ h1, h2, h3 {
     }
 }
 
-.rs-footer {
+.rs_header {
+    background-color: var(--header-background-color) !important;
+    color: var(--header-overlay-color) !important;
+    a {
+        color: var(--header-overlay-color) !important;
+    }
+}
+
+.rs_footer {
     background-color: var(--footer-background-color) !important;
     color: var(--footer-overlay-color) !important;
     a {
