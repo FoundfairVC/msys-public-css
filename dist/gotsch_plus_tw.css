@@ -2055,3 +2055,9 @@ body {
         font-size: 1rem;
     }
 }
+}
+
+
+.rs-teaser-image .rs-inline-svg {
+  min-height: 100px !important;
+}
