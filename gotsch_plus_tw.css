@@ -2999,3 +2999,7 @@ h3.rs_pos_element__title {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
 }
+
+.rs-teaser-image .rs-inline-svg {
+  min-height: 100px !important;
+}
