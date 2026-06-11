@@ -3027,6 +3027,10 @@ h3.rs_pos_element__title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+
+  p+p {
+    margin-top: 0.25em !important;
+  }
 }
 
 div.header-upgrade a {

@@ -116,6 +116,10 @@ h3.rs_pos_element__title {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     line-clamp: 4;
+
+  p+p {
+    margin-top: 0.25em !important;
+  }
 }
 
 .rs_blurb--basic .rs_blurb__container .rs_blurb__image img {
