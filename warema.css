@@ -2236,6 +2236,14 @@ h4 {
   color: var(--headline-text-color);
 }
 
+div.rs_hero_block__content h1 {
+  color: #ffffff
+}
+
+div.rs_overlay_block__content h2 {
+  font-weight: 400;
+}
+
 @media (max-width: 768px) {
   h1, h2 {
       font-size: 1.25rem;
@@ -2368,10 +2376,6 @@ div.hero-slider-block .cta-button:hover {
   div.rs-hero-slider-container {
     height: 320px !important;
   }
-}
-
-div.rs_hero_block__content h1 {
-  color: #ffffff
 }
 
 div.rs-griditem.rs-teaser {
@@ -2670,6 +2674,10 @@ h3.rs_pos_element__title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+}
+
+.rs_header .header__container .header .header__logo img{
+  object-fit: contain !important;
 }
 
 div.header-upgrade a {
