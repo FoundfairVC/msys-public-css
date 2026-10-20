@@ -345,6 +345,36 @@
   margin-top: 0;
 }
 
+/* Rich-text lists (legacy rs-theme `ul` and `.rs-teaser-body ul.list-bullet li`): discs inside,
+   15px + 8px indent, 16px text at every width */
+.theme-showcase [data-block='portalArticle'] .sc-prose ul {
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose ul > li {
+  padding-left: 8px;
+  list-style-position: inside;
+}
+
+/* Numbered lists (legacy `.text-with-media-list-block ol.list-number`): one centred row,
+   items 8px padded (markers outside, like legacy); a column up to 768px */
+.theme-showcase [data-block='portalArticle'] .sc-prose ol {
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose ol > li {
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .theme-showcase [data-block='portalArticle'] .sc-prose ol {
+    flex-direction: column;
+  }
+}
+
 /* Inline SVG media (step numbers, icons): 100px like legacy `.rs-inline-svg` */
 .theme-showcase [data-block='portalArticle'] img[src$='.svg'] {
   width: 100px;
