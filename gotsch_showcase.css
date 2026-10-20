@@ -1,0 +1,832 @@
+/*
+ * gotsch24 — showcase stylesheet (model: gotsch24.de/home, legacy gotsch_plus_tw.css).
+ * Stand-alone: replaces the organisation's legacy stylesheet, relies on no Tailwind preflight.
+ * Selectors: only the stable hooks of src/components/themes/showcase/HOOKS.md (plus plain
+ * element selectors below them); home-only rules key on the home page's block ids.
+ * Fonts: Oswald (SIL OFL 1.1, fonts/gotsch/OFL.txt), relative to this file. Only weight 500,
+ * like legacy: bold headings are synthesized from it by the browser.
+ */
+
+@font-face {
+  font-family: Oswald;
+  font-weight: 500;
+  font-display: swap;
+  src: url(gotsch/oswald-v49-latin-500.woff2) format('woff2');
+}
+
+.theme-showcase {
+  --g-blue: #20398e;
+  --g-orange: #ed7c00;
+  --g-gutter: max(8px, (100vw - 1200px) / 2);
+  --g-button-font: helvetica, arial, sans-serif;
+  --g-shadow-dark: 2px 2px 20px #000, 2px 2px 40px #000;
+  --primary-color: #ed7c00;
+  --showcase-headlines-font-family: Oswald, sans-serif;
+  --showcase-text-font-family: Karla, sans-serif;
+  --showcase-header-menu-bar-background-color: #e6eaea;
+}
+
+/* Typography */
+.theme-showcase :is(h1, h2),
+.theme-showcase .sc-section-title {
+  font-size: 28px;
+}
+
+.theme-showcase h3 {
+  font-size: 20px;
+}
+
+.theme-showcase blockquote {
+  margin: 20px 40px;
+  padding-bottom: 4px;
+  color: var(--g-blue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.theme-showcase h5 {
+  margin: 10px 0 0;
+  padding: 0 0 4px 20px;
+  color: #000;
+  font: 600 13px/16px sans-serif;
+  text-transform: uppercase;
+}
+
+.theme-showcase hr {
+  width: 192px;
+  max-width: 100%;
+  height: 1px;
+  margin: 25px auto 0;
+  border: 0;
+  background: var(--g-orange);
+}
+
+/* Header */
+.sc-nav a {
+  color: #000;
+  font-family: Karla, sans-serif;
+}
+
+/* Breadcrumbs: orange trail with chevrons on the light band */
+.theme-showcase .sc-breadcrumbs {
+  padding: 16px var(--g-gutter);
+  background: #f4f4f4;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.theme-showcase .sc-breadcrumbs ol {
+  gap: 0;
+  padding: 8px 0;
+}
+
+.theme-showcase .sc-breadcrumbs li {
+  gap: 0;
+}
+
+.theme-showcase .sc-breadcrumbs li + li::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
+  background: var(--g-orange);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 18 6-6-6-6'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.theme-showcase .sc-breadcrumbs :is(a, span) {
+  color: var(--g-orange);
+  font-weight: 400;
+}
+
+/* Home entry: outlined 24px house (lucide "house") */
+.sc-nav-home i {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  vertical-align: baseline;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8'/%3E%3Cpath d='M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/%3E%3C/svg%3E");
+  mask-position: center;
+  mask-size: 24px 24px;
+}
+
+/* Hero slider: pulled under the next block, fading out at the bottom */
+.theme-showcase .sc-slider[data-block='websiteSlider'] {
+  mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+}
+
+/* Hero arrows: outlined circles with a line arrow, centred on the part of the hero
+   above the 160px (80px) pull-up */
+.theme-showcase [data-block='websiteSlider'] .sc-slider-nav {
+  top: calc(50% - 80px);
+  width: 32px;
+  height: 32px;
+  border-color: #222;
+  background: transparent;
+  color: #222;
+}
+
+.theme-showcase [data-block='websiteSlider'] .sc-slider-nav::before {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  border: 0;
+  background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12 19-7-7 7-7M19 12H5'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+/* prev / next by sibling order: the hook does not tell them apart */
+.theme-showcase [data-block='websiteSlider'] .sc-slider-nav:first-of-type {
+  left: 8px;
+}
+
+.theme-showcase [data-block='websiteSlider'] .sc-slider-nav:last-of-type {
+  right: 8px;
+}
+
+.theme-showcase
+  [data-block='websiteSlider']
+  .sc-slider-nav:last-of-type::before {
+  transform: scaleX(-1);
+}
+
+.theme-showcase .sc-hero-title {
+  font-size: 48px;
+  line-height: 48px;
+  text-shadow: var(--g-shadow-dark);
+}
+
+.sc-hero-slide p {
+  font:
+    20px/32px Karla,
+    sans-serif;
+  text-shadow: var(--g-shadow-dark);
+}
+
+/* Button row 40px below the text (16px on phones) */
+.theme-showcase .sc-hero-cta {
+  margin-top: 7px;
+}
+
+.theme-showcase .sc-hero-cta a {
+  margin: 8px auto;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: linear-gradient(315deg, var(--g-orange) 75%, #fff);
+  color: #fff;
+  font: 400 24px var(--g-button-font);
+}
+
+.theme-showcase .sc-hero-cta a::before {
+  display: none;
+}
+
+/* Full-width blocks share the 1200px content column */
+.theme-showcase
+  :is([data-block='websiteChildPages'], [data-block='websiteRelatedArticles']) {
+  padding-inline: var(--g-gutter);
+}
+
+/* "Unsere Leistungen": icon row on a translucent band over the hero */
+.theme-showcase [data-layout='icon-slider'] {
+  position: relative;
+  padding: 16px 0 24px;
+}
+
+.theme-showcase [data-layout='icon-slider'] .sc-section-title {
+  margin: 0;
+  padding: 8px 0 4px;
+  text-shadow:
+    2px 2px 20px #fff,
+    2px 2px 40px #fff;
+}
+
+.theme-showcase .rs-relatedpages-region {
+  flex-wrap: nowrap;
+  gap: 0;
+  max-width: none;
+  margin: 40px 0 0;
+  padding: 0 0 8px;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  background: rgb(255 255 255 / 40%);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.theme-showcase .rs-relatedpages-icon-container {
+  flex: 1 1 0;
+  min-width: 0;
+  margin-top: -31px;
+}
+
+.theme-showcase .rs-relatedpages-icon-background {
+  box-sizing: border-box;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 4px;
+  padding: 12px;
+  background: linear-gradient(315deg, #ff6701, #ff6701, #fff);
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+}
+
+.theme-showcase .rs-relatedpages-icon {
+  width: 100%;
+  height: 100%;
+  stroke-width: 1.5px;
+}
+
+.theme-showcase .rs-relatedpages-icon-container span {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Text blocks: plain ones on the light band, highlighted ones white; a plain first
+   block under the hero stays transparent over the hero fade */
+.theme-showcase [data-block='portalArticle'].sc-section {
+  background: #f4f4f4;
+}
+
+.theme-showcase [data-block='portalArticle'].sc-section--highlighted {
+  background: #fff;
+}
+
+.theme-showcase
+  [data-block='websiteSlider']
+  + [data-block='portalArticle']:not(.sc-section--highlighted) {
+  background: transparent;
+}
+
+/* Text block items off the white band: text flush with the item edge, 8px below its
+   top (the item body's 8px padding is offset sideways) */
+.theme-showcase
+  .sc-section[data-block='portalArticle']:not(.sc-section--highlighted)
+  .sc-prose {
+  margin: 0 -8px -8px;
+}
+
+/* Text block prose rhythm (legacy text-with-media): a leading h2 8px lower, headings
+   and paragraphs spaced by what precedes them */
+.theme-showcase [data-block='portalArticle'] .sc-prose > h2:first-child {
+  padding-top: 8px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose :is(* + h2, h2 + p) {
+  margin-top: 15px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose * + h3 {
+  margin-top: 12px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose h2 + h3 {
+  margin-top: 5px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose h3 + h2 {
+  margin-top: 5px;
+}
+
+/* Item headline (legacy teaser title): at the top of the item body, 18px on a 28px line,
+   the text 8px below */
+.theme-showcase
+  [data-block='portalArticle']
+  .sc-prose:has(> .sc-item-headline) {
+  margin-top: 0;
+}
+
+.theme-showcase
+  .sc-section[data-block='portalArticle']:not(.sc-section--highlighted)
+  .sc-prose:has(> .sc-item-headline) {
+  margin-top: -8px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-item-headline {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose > .sc-item-headline + * {
+  margin-top: 8px;
+}
+
+/* One-column text blocks (legacy list layout): items 8px apart at every width */
+.theme-showcase [data-block='portalArticle'] [data-columns='1'] {
+  gap: 8px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose h1 + h3 {
+  margin-top: 0;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose p + p {
+  margin-top: 16px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose > hr:first-child {
+  margin-top: 15px;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose hr + p {
+  margin-top: 25px;
+}
+
+/* Legacy text-with-media bodies keep white space: a blank paragraph is one empty line */
+.theme-showcase [data-block='portalArticle'] .sc-prose {
+  white-space: pre-wrap;
+}
+
+.theme-showcase [data-block='portalArticle'] .sc-prose h5 + p {
+  margin-top: 0;
+}
+
+/* Inline SVG media (step numbers, icons): 100px like legacy `.rs-inline-svg` */
+.theme-showcase [data-block='portalArticle'] img[src$='.svg'] {
+  width: 100px;
+}
+
+/* Consecutive text blocks off the white band overlap like the legacy blocks */
+.theme-showcase
+  [data-block='portalArticle']:not(.sc-section--highlighted)
+  + [data-block='portalArticle']:not(.sc-section--highlighted) {
+  margin-top: -10px;
+}
+
+/* Service text off the white band: the title flush with the text, 8px above it */
+.theme-showcase
+  .sc-article.sc-section[data-block='portalArticle']:not(
+    .sc-section--highlighted
+  )
+  section
+  > div
+  > h3 {
+  margin: -8px -8px 0;
+}
+
+.theme-showcase
+  .sc-article.sc-section[data-block='portalArticle']:not(
+    .sc-section--highlighted
+  )
+  .sc-prose {
+  margin-top: 8px;
+}
+
+/* FAQ questions: dark like the legacy faq-block */
+.theme-showcase
+  :is([data-block='websiteFaqList'], [data-block='portalAutoGeneratedFaq'])
+  button[aria-expanded] {
+  color: #222;
+}
+
+/* Home intro: small portrait */
+main.page-type-showcase-gotsch24-home [data-block-id='portalArticle-1'] img {
+  max-width: 150px;
+}
+
+/* Text block call to action: a plain link */
+.theme-showcase [data-block='portalArticle'] .sc-prose ~ a {
+  align-self: flex-start;
+  width: auto;
+  margin: 0;
+  padding: 0 4px;
+  border: 0;
+  background: none;
+  color: var(--g-orange);
+  font-weight: 500;
+  text-align: start;
+}
+
+/* Off the white band the link sits directly below the text (offsets its -8px margin) */
+.theme-showcase
+  .sc-section[data-block='portalArticle']:not(.sc-section--highlighted)
+  .sc-prose
+  ~ a {
+  margin-top: 8px;
+}
+
+/* Cards: template slider and teasers */
+.theme-showcase .sc-card-title {
+  color: var(--g-blue);
+  font-family: sans-serif;
+  font-size: 17.6px;
+  line-height: 1.231;
+  text-transform: none;
+}
+
+.theme-showcase .sc-card-cta {
+  font-family: var(--g-button-font);
+}
+
+.theme-showcase [data-block='websiteTemplateList'] .sc-card-title {
+  font-size: 16px;
+}
+
+.theme-showcase span.sc-card-cta {
+  border: 1px solid var(--g-orange);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--g-orange);
+}
+
+/* Article list: section spaced like the other blocks; two columns of horizontal
+   cards, image left (3:2) */
+.theme-showcase [data-block='websiteRelatedArticles'] > .sc-section {
+  margin: 0;
+  padding: 16px 0 24px;
+}
+
+.theme-showcase [data-block='websiteRelatedArticles'] .sc-section-title {
+  margin: 0;
+  padding: 8px 0 4px;
+}
+
+/* Article list: two columns of horizontal cards, image left (3:2) */
+.theme-showcase
+  [data-block='websiteRelatedArticles']
+  :is([data-layout='list'], [data-layout='2-column-list'])
+  > ul {
+  gap: 16px;
+}
+
+.theme-showcase
+  :is([data-layout='list'], [data-layout='2-column-list'])
+  .sc-card {
+  padding: 8px;
+  border-radius: 0;
+  background: transparent;
+}
+
+.theme-showcase
+  :is([data-layout='list'], [data-layout='2-column-list'])
+  .sc-card
+  .sc-card-media {
+  align-self: start;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 3 / 2 !important; /* beats the card's inline image ratio */
+}
+
+.theme-showcase
+  :is([data-layout='list'], [data-layout='2-column-list'])
+  .sc-card-body {
+  padding: 8px 8px 0;
+}
+
+.theme-showcase
+  :is([data-layout='list'], [data-layout='2-column-list'])
+  .sc-card-text
+  p {
+  display: -webkit-box;
+  margin-top: 8px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.theme-showcase
+  :is([data-layout='list'], [data-layout='2-column-list'])
+  .sc-card-cta {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 8px;
+}
+
+.theme-showcase
+  :is([data-layout='list'], [data-layout='2-column-list'])
+  .sc-card-cta
+  a {
+  margin-right: 16px;
+  padding: 6px 8px;
+  color: var(--g-orange);
+  font-weight: 500;
+}
+
+.theme-showcase
+  :is([data-layout='list'], [data-layout='2-column-list'])
+  .sc-card-cta
+  a::before {
+  display: none;
+}
+
+/* Child page grid (Karriere): white shadowed cards, 160px image (200px from
+   768px), compact body, 2-line title, 3-line orange text, plain link bottom right */
+.theme-showcase [data-layout='grid'] {
+  padding: 0;
+}
+
+.theme-showcase [data-layout='grid'] .sc-section-title {
+  margin: 0;
+  padding: 8px 0 0;
+}
+
+.theme-showcase [data-layout='grid'] .sc-card {
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+}
+
+.theme-showcase [data-layout='grid'] .sc-card .sc-card-media {
+  height: 160px;
+  max-height: none;
+}
+
+/* Legacy keeps the empty image area on cards without an image */
+.theme-showcase
+  [data-layout='grid']
+  .sc-card:not(:has(.sc-card-media))::before {
+  content: '';
+  flex: none;
+  height: 160px;
+}
+
+.theme-showcase [data-layout='grid'] .sc-card-body {
+  padding: 8px 8px 0;
+}
+
+.theme-showcase [data-layout='grid'] .sc-card-title {
+  display: -webkit-box;
+  font-size: 16px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.theme-showcase [data-layout='grid'] .sc-card-text p {
+  display: -webkit-box;
+  margin-top: 8px;
+  color: var(--g-orange);
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.theme-showcase [data-layout='grid'] .sc-card-cta {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 16px 8px 8px;
+}
+
+.theme-showcase [data-layout='grid'] .sc-card-cta a {
+  color: var(--g-orange);
+  font-weight: 500;
+}
+
+.theme-showcase [data-layout='grid'] .sc-card-cta a::before {
+  display: none;
+}
+
+/* Child page tiles: title on a dark translucent bar, 16px below each tile */
+.theme-showcase [data-layout='tiles'] {
+  padding: 0;
+}
+
+.theme-showcase .sc-tile figure {
+  margin-bottom: 16px;
+  border-radius: 0;
+}
+
+.theme-showcase .sc-tile .sc-card-title {
+  padding: 8px 16px;
+  background: rgb(58 58 58 / 60%);
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.theme-showcase .sc-tile:hover .sc-card-title {
+  background: rgb(58 58 58);
+}
+
+/* Wizard page: legacy title spacing (the iframe hugs the title) and brand colour */
+.theme-showcase .sc-wizard-title {
+  margin: 24px 0 calc(-1 * var(--space-l));
+  color: var(--g-blue);
+}
+
+@media (min-width: 768px) {
+  .theme-showcase .sc-wizard-title {
+    margin-top: 40px;
+  }
+
+  .theme-showcase
+    [data-block='websiteRelatedArticles']
+    [data-layout='list']
+    > ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .theme-showcase
+    :is([data-layout='list'], [data-layout='2-column-list'])
+    .sc-card {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 1fr auto;
+  }
+
+  .theme-showcase [data-layout='2-column-list'] .sc-card-media {
+    grid-row: 1 / 3;
+  }
+
+  .theme-showcase
+    [data-layout='2-column-list']
+    :is(.sc-card-body, .sc-card-cta) {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .theme-showcase [data-layout='grid'] {
+    padding: 16px 0 24px;
+  }
+
+  .theme-showcase [data-layout='grid'] .sc-section-title {
+    padding-bottom: 4px;
+  }
+
+  .theme-showcase [data-layout='grid'] .sc-card .sc-card-media,
+  .theme-showcase
+    [data-layout='grid']
+    .sc-card:not(:has(.sc-card-media))::before {
+    height: 200px;
+  }
+
+  .theme-showcase [data-layout='tiles'] {
+    padding: 16px 0 24px;
+  }
+
+  .theme-showcase
+    [data-block='portalArticle']:not(.sc-section--highlighted)
+    + [data-block='portalArticle']:not(.sc-section--highlighted) {
+    margin-top: -32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sc-header-logo {
+    margin-block: 4.5px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .theme-showcase .sc-breadcrumbs {
+    padding-top: 0;
+  }
+
+  .theme-showcase [data-layout='icon-slider'] {
+    padding: 0;
+  }
+
+  .theme-showcase [data-layout='icon-slider'] .sc-section-title {
+    padding-bottom: 0;
+  }
+
+  .theme-showcase .rs-relatedpages-region {
+    margin: 0;
+    padding: 8px 0;
+    border: 0;
+    background: none;
+  }
+
+  .theme-showcase .rs-relatedpages-icon-container {
+    margin-top: 0;
+  }
+
+  .theme-showcase .rs-relatedpages-icon-background {
+    width: 64px;
+    height: 64px;
+    padding: 4px;
+  }
+
+  .theme-showcase .rs-relatedpages-icon-container span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .theme-showcase :is(h1, h2),
+  .theme-showcase .sc-section-title {
+    font-size: 20px;
+  }
+
+  .theme-showcase h3,
+  .theme-showcase .sc-prose h3 {
+    font-size: 16px;
+  }
+
+  .theme-showcase .sc-prose p {
+    font-size: 14px;
+  }
+
+  .theme-showcase [data-block='portalArticle'] .sc-prose :is(h2, h3) {
+    padding-bottom: 0;
+  }
+
+  .theme-showcase [data-block='portalArticle'] .sc-prose p + p {
+    margin-top: 8px;
+  }
+
+  .theme-showcase blockquote {
+    margin: 14px 40px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .theme-showcase .sc-hero-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .sc-hero-slide p {
+    display: none;
+  }
+
+  .theme-showcase .sc-hero-cta {
+    margin-top: -7px;
+  }
+
+  .theme-showcase [data-block='websiteSlider'] .sc-slider-nav {
+    top: calc(50% - 40px);
+  }
+
+  .theme-showcase
+    :is([data-layout='list'], [data-layout='2-column-list'])
+    .sc-card {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+  }
+
+  .theme-showcase
+    [data-block='websiteRelatedArticles']
+    :is([data-layout='list'], [data-layout='2-column-list'])
+    > ul {
+    gap: 8px;
+  }
+
+  .theme-showcase [data-block='websiteRelatedArticles'] .sc-section-title {
+    padding-bottom: 0;
+  }
+
+  .theme-showcase
+    :is([data-layout='list'], [data-layout='2-column-list'])
+    .sc-card-body {
+    padding-bottom: 8px;
+  }
+
+  /* Legacy "trust" item: only the headlines on phones (the quote item collapses) */
+  main.page-type-showcase-gotsch24-home
+    [data-block-id='portalArticle-1']
+    :is(p, :has(> * > img)) {
+    display: none;
+  }
+}
+
+/* Article pages: the service detail and template list bands keep the 28px section heading of the
+   article text; template card titles are the legacy h4 (sans-serif, 16px) */
+.theme-showcase
+  :is([data-block='websiteServiceDetail'], [data-block='websiteTemplateList'])
+  > section
+  > div:first-child
+  > h2 {
+  font-size: 28px;
+}
+
+.theme-showcase [data-block='websiteTemplateList'] li h3 {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Footer: the client address continues the © line (same Karla text), set off by an orange dot;
+   on phones it is its own centred line */
+.theme-showcase .sc-footer-address {
+  margin-left: 0;
+}
+
+.theme-showcase .sc-footer-address::before {
+  content: '·';
+  margin: 0 10px;
+  color: var(--g-orange);
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .theme-showcase .sc-footer-address {
+    margin-top: 4px;
+  }
+
+  .theme-showcase .sc-footer-address::before {
+    content: none;
+  }
+}
