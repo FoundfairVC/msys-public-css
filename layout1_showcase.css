@@ -1,0 +1,16 @@
+/*
+ * layout1 — showcase stylesheet for clients whose organisation uses layout1_plus_tw.css.
+ * Loads the legacy layout1 sheet unchanged, then maps its legacy rules onto the showcase
+ * markup. Selectors: only the stable hooks of src/components/themes/showcase/HOOKS.md (plus
+ * plain element selectors below them). Colours: only the client-profile variables.
+ */
+
+@import url('layout1_plus_tw.css');
+
+/* Legacy `.cta-button:hover` (layout1_plus_tw.css): the lead form button keeps the button
+   colour on hover (legacy `--button-basic-color`, the filled button colour in layout1). */
+.theme-showcase [data-block='websiteLeadForm'] button[type='submit']:hover:not(:disabled) {
+  border-color: var(--button-filled-background-color);
+  background: var(--button-filled-background-color);
+  color: var(--button-filled-color);
+}
