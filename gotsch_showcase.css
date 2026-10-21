@@ -413,11 +413,6 @@
   color: #222;
 }
 
-/* Home intro: small portrait */
-main.page-type-showcase-gotsch24-home [data-block-id='portalArticle-1'] img {
-  max-width: 150px;
-}
-
 /* Text block call to action: a plain link */
 .theme-showcase [data-block='portalArticle'] .sc-prose ~ a {
   align-self: flex-start;
