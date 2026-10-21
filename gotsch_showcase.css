@@ -835,6 +835,193 @@
   font-size: 16px;
 }
 
+/* Landing service pages (legacy rs hero and grids, e.g. /heizung/waermepumpe2) */
+
+/* Hero block (not the slider): the legacy filled button with its play icon, left under the text */
+.theme-showcase [data-block='websiteHero'] .sc-hero-cta a {
+  margin: 0;
+  padding: 15px 25px;
+  border-radius: 8px;
+  background: #ff6701;
+  font: 700 16px/1.231 var(--g-button-font);
+}
+
+.theme-showcase [data-block='websiteHero'] .sc-hero-cta a::before {
+  display: block;
+}
+
+.theme-showcase [data-block='websiteHero'] .sc-hero-title h2 {
+  font-size: 28px;
+}
+
+/* Blurb list with a heading (legacy slim grid): light blue band, one column per blurb, the icon
+   centred above its text, no box */
+.theme-showcase [data-block='portalList'].sc-section {
+  margin: 0;
+  padding: 40px 0;
+}
+
+.theme-showcase [data-block='portalList']:has(.sc-section-title) {
+  background: #deebf1;
+}
+
+.theme-showcase [data-block='portalList'] h3.sc-section-title {
+  padding-bottom: 4px;
+  color: var(--g-orange);
+  font-size: 20px;
+  text-align: center;
+}
+
+.theme-showcase [data-block='portalList'] .sc-section-title + * > :first-child {
+  margin-top: 5px;
+}
+
+.theme-showcase [data-block='portalList'] div:has(> div > .sc-tile) {
+  flex-wrap: nowrap;
+}
+
+.theme-showcase [data-block='portalList'] div:has(> .sc-tile) {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.theme-showcase [data-block='portalList']:has(.sc-section-title) .sc-tile {
+  background: none;
+}
+
+.theme-showcase [data-block='portalList'] .sc-tile > div {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+}
+
+.theme-showcase [data-block='portalList'] .sc-tile > div > div {
+  flex: none;
+  max-width: none;
+  text-align: center;
+}
+
+.theme-showcase [data-block='portalList'] .sc-tile p {
+  margin-top: 15px;
+  color: #333;
+}
+
+.theme-showcase [data-block='portalList'] .sc-tile p + p {
+  margin-top: 0;
+}
+
+/* Blurb list without heading (legacy quote blurb): a white dotted box on the grey band */
+.theme-showcase [data-block='portalList']:not(:has(.sc-section-title)) {
+  padding-bottom: 0;
+  background: #f2f4f4;
+}
+
+.theme-showcase
+  [data-block='portalList']:not(:has(.sc-section-title))
+  .sc-tile {
+  border: 1px dotted #333;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.theme-showcase
+  [data-block='portalList']:not(:has(.sc-section-title))
+  .sc-tile
+  > div {
+  padding: 40px 50px;
+}
+
+.theme-showcase [data-block='portalTeaser'] .sc-card {
+  border-radius: 8px;
+}
+
+.theme-showcase [data-block='portalTeaser'] .sc-card-cta a {
+  padding: 15px 25px;
+  border-radius: 8px;
+  background: #ff6701;
+  color: #fff;
+  font: 700 16px/1.231 var(--g-button-font);
+  text-decoration: none;
+}
+
+/* Icon blurbs in service text columns (media without position): white rounded boxes, the 100px
+   icon centred above the centred text, on the light blue band */
+.theme-showcase
+  .sc-article.sc-section:has(
+    [data-columns] > section:not([data-media-position]) > img
+  ) {
+  background: #deebf1;
+}
+
+.theme-showcase
+  .sc-article
+  [data-columns]
+  > section:not([data-media-position]):has(> img) {
+  padding: 25px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.theme-showcase
+  .sc-article
+  [data-columns]
+  > section:not([data-media-position])
+  > img {
+  align-self: center;
+  width: 100px;
+}
+
+/* Calls to action in service text columns wrap instead of overflowing the column */
+.theme-showcase .sc-article [data-columns] > section a {
+  max-width: 100%;
+  white-space: normal;
+}
+
+/* Below 992px the legacy grid columns take the full width: teasers and icon blurbs stack, plain
+   blurbs two per row */
+@media (max-width: 991px) {
+  .theme-showcase [data-block='portalTeaser'] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .theme-showcase
+    .sc-article
+    [data-columns]:has(> section:not([data-media-position]) > img) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .theme-showcase [data-block='portalList'] div:has(> div > .sc-tile) {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .theme-showcase [data-block='portalList'] div:has(> .sc-tile) {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .theme-showcase
+    [data-block='portalList']:not(:has(.sc-section-title))
+    div:has(> .sc-tile) {
+    flex-basis: 100%;
+  }
+
+  .theme-showcase
+    [data-block='portalList']:not(:has(.sc-section-title))
+    .sc-tile
+    > div {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .theme-showcase [data-block='websiteHero'] .sc-hero-title h2 {
+    font-size: 20px;
+  }
+}
+
 /* Footer: the client address continues the © line (same Karla text), set off by an orange dot;
    on phones it is its own centred line */
 .theme-showcase .sc-footer-address {
