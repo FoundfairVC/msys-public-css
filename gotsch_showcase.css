@@ -829,8 +829,9 @@
   }
 }
 
+/* The row is as tall as the legacy navigation; a logo-only header (onlyLogo) keeps the logo height */
 @media (min-width: 1024px) {
-  .sc-header-logo {
+  .sc-header:has(.sc-nav) .sc-header-logo {
     margin-block: 4.5px;
   }
 }
