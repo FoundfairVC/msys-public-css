@@ -931,23 +931,6 @@
   padding: 40px 50px;
 }
 
-/* Heading item of a service text (legacy content block: orange eyebrow over a centred h2):
-   centred with its text */
-.theme-showcase
-  .sc-article[data-block='portalArticle']
-  section:has(> div > .sc-prose > [style*='center']:first-child)
-  > div
-  > h3 {
-  text-align: center;
-}
-
-/* The text and the teasers it introduces share the grey band */
-.theme-showcase
-  .sc-article[data-block='portalArticle']:has(+ * [data-block='portalTeaser']),
-.theme-showcase div:has(> * > [data-block='portalTeaser']) {
-  background: #f2f4f4;
-}
-
 .theme-showcase [data-block='portalTeaser'] .sc-card {
   border-radius: 8px;
 }
@@ -998,7 +981,7 @@
 /* Below 992px the legacy grid columns take the full width: teasers and icon blurbs stack, plain
    blurbs two per row */
 @media (max-width: 991px) {
-  .theme-showcase [data-block='portalTeaser'][data-direction='horizontal'] {
+  .theme-showcase [data-block='portalTeaser'] {
     grid-template-columns: minmax(0, 1fr);
   }
 
