@@ -1016,7 +1016,7 @@
     .sc-article
     [data-columns]
     > [data-purpose='trust']
-    :is(p, blockquote, img, h4, h5, hr) {
+    :is(p, blockquote, h4, h5, hr) {
     display: revert;
   }
 
