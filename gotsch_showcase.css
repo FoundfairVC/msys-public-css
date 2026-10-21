@@ -434,6 +434,35 @@
   margin-top: 8px;
 }
 
+/* Informative item in a grid (legacy `.rs-teaser.rs-purpose-informative button` inside the grid's
+   `button { padding: 0; background: transparent }`): the call to action is a white outlined bar
+   across the item, orange on hover */
+.theme-showcase
+  [data-columns]:not([data-columns='1'])
+  > [data-purpose='informative']
+  .sc-prose
+  ~ a {
+  align-self: stretch;
+  width: auto;
+  margin: 10px 8px -6px; /* 2px off the text and the item edge (prose -8px, body 8px) */
+  padding: 0;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background: none;
+  color: #fff;
+  font-family: helvetica, arial, sans-serif;
+  line-height: normal;
+  text-align: center;
+}
+
+.theme-showcase
+  [data-columns]:not([data-columns='1'])
+  > [data-purpose='informative']
+  .sc-prose
+  ~ a:hover {
+  color: var(--g-orange);
+}
+
 /* Cards: template slider and teasers */
 .theme-showcase .sc-card-title {
   color: var(--g-blue);
