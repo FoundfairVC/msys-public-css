@@ -809,11 +809,13 @@
     .sc-card-body {
     padding-bottom: 8px;
   }
+}
 
-  /* Legacy "trust" item: only the headlines on phones (the quote item collapses) */
-  main.page-type-showcase-gotsch24-home
-    [data-block-id='portalArticle-1']
-    :is(p, :has(> * > img)) {
+/* Legacy "trust" items (rs-purpose-trust): only the headlines up to 768px; the image wrapper of a
+   hub item goes too, so the empty media column takes no space */
+@media (max-width: 768px) {
+  [data-block] [data-purpose='trust'] :is(p, blockquote, img, h4, h5, hr),
+  [data-block] [data-purpose='trust'] > :has(> img) {
     display: none;
   }
 }
