@@ -1033,6 +1033,39 @@
   }
 }
 
+/* Block calls to action (legacy grid button row): centred below the grid, the filled rs button
+   with its play icon */
+.theme-showcase .sc-block-cta {
+  margin-top: 0;
+  padding-top: 24px;
+}
+
+.theme-showcase .sc-block-cta a {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  margin: 0;
+  padding: 15px 25px;
+  border: 0;
+  border-radius: 8px;
+  background: #ff6701;
+  color: #fff;
+  box-shadow: none;
+  font: 700 16px/1.231 var(--g-button-font);
+  text-transform: none;
+}
+
+.theme-showcase .sc-block-cta a::before {
+  content: '';
+  flex-shrink: 0;
+  width: 0.852em;
+  height: 0.84em;
+  margin-right: 10px;
+  background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM5.33 4.67v6.66L11.3 8Z'/%3E%3C/svg%3E")
+    left center / contain no-repeat;
+}
+
 /* Calls to action in service text columns wrap instead of overflowing the column */
 .theme-showcase .sc-article [data-columns] > section a {
   max-width: 100%;
