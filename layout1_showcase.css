@@ -7,10 +7,16 @@
 
 @import url('layout1_plus_tw.css');
 
+/* Legacy `.cta-button` (layout1_plus_tw.css): no border at rest. */
+.theme-showcase [data-block='websiteLeadForm'] button[type='submit'] {
+  border: 0 solid var(--button-filled-background-color);
+}
+
 /* Legacy `.cta-button:hover` (layout1_plus_tw.css): the lead form button keeps the button
-   colour on hover (legacy `--button-basic-color`, the filled button colour in layout1). */
+   colour on hover (legacy `--button-basic-color`, the filled button colour in layout1) and
+   gets a 1px border in it. */
 .theme-showcase [data-block='websiteLeadForm'] button[type='submit']:hover:not(:disabled) {
-  border-color: var(--button-filled-background-color);
+  border: 1px solid var(--button-filled-background-color);
   background: var(--button-filled-background-color);
   color: var(--button-filled-color);
 }
