@@ -49,12 +49,15 @@
   margin: 10px 0 0;
   padding: 0 0 4px 20px;
   color: #000;
-  font: 600 13px/16px sans-serif;
+  font:
+    600 13px/16px Outfit,
+    sans-serif; /* Outfit is not loaded: renders sans-serif */
   text-transform: uppercase;
 }
 
 .theme-showcase hr {
   width: 192px;
+  color: #000;
   max-width: 100%;
   height: 1px;
   margin: 25px auto 0;
@@ -63,9 +66,25 @@
 }
 
 /* Header */
-.sc-nav a {
+.sc-nav :is(li, a) {
   color: #000;
   font-family: Karla, sans-serif;
+}
+
+/* Legacy RsTheme one-row header: dark underline, e-mail and phone boxes with 8px corners on the
+   header colour; once the page is scrolled the header and the boxes turn white */
+.sc-nav a::after {
+  background: #333;
+}
+
+.theme-showcase .sc-nav ~ div {
+  border-radius: 8px;
+  background: transparent;
+}
+
+.theme-showcase.sc-header[data-scrolled],
+.theme-showcase.sc-header[data-scrolled] .sc-nav ~ div {
+  background: #fff;
 }
 
 /* Breadcrumbs: orange trail with chevrons on the light band */
@@ -114,6 +133,18 @@
 /* Hero slider: pulled under the next block, fading out at the bottom */
 .theme-showcase .sc-slider[data-block='websiteSlider'] {
   mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+}
+
+/* Hero slide: faded once, by the slider (legacy container mask); from 768px the overlay fades
+   in its own box as well (legacy overlay mask) */
+.theme-showcase [data-block='websiteSlider'] .sc-hero-slide {
+  mask-image: none;
+}
+
+@media (min-width: 768px) {
+  .theme-showcase [data-block='websiteSlider'] .sc-hero-slide > div {
+    mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+  }
 }
 
 /* Hero arrows: outlined circles with a line arrow, centred on the part of the hero
@@ -182,6 +213,27 @@
 
 .theme-showcase .sc-hero-cta a::before {
   display: none;
+}
+
+/* Hero slider button: the legacy `<button>` keeps the normal letter spacing */
+.theme-showcase [data-block='websiteSlider'] .sc-hero-cta a {
+  letter-spacing: normal;
+}
+
+/* Hero slider buttons (legacy `mt-2 xl:mt-8` plus the button's 8px margin): 16px below the text
+   up to 1279px (offsets the button row's 25px top padding) */
+@media (min-width: 469px) and (max-width: 1279px) {
+  .theme-showcase [data-block='websiteSlider'] .sc-hero-cta {
+    margin-top: -17px;
+  }
+}
+
+/* Hero slider title (legacy `text-3xl`, 24px up to 512px): 30px on a 36px line up to 767px */
+@media (min-width: 513px) and (max-width: 767px) {
+  .theme-showcase [data-block='websiteSlider'] .sc-hero-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 /* Full-width blocks share the 1200px content column */
@@ -276,7 +328,10 @@
   padding-top: 8px;
 }
 
-.theme-showcase [data-block='portalArticle'] .sc-prose :is(* + h2, h2 + p) {
+.theme-showcase
+  [data-block='portalArticle']
+  .sc-prose
+  :is(* + h2, :is(h1, h2) + p) {
   margin-top: 15px;
 }
 
@@ -313,6 +368,47 @@
 
 .theme-showcase [data-block='portalArticle'] .sc-prose > .sc-item-headline + * {
   margin-top: 8px;
+}
+
+/* Grid items (legacy `div.grid .rs-teaser-body`: a space-between column of headline, text and
+   button): in a stretched cell the headline stays on top, the text sits at the bottom (centred
+   between headline and button when the item has one) */
+.theme-showcase
+  [data-columns]:not([data-columns='1'])
+  .sc-prose:has(> .sc-item-headline) {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+.theme-showcase
+  [data-columns]:not([data-columns='1'])
+  .sc-prose
+  > .sc-item-headline {
+  margin-bottom: auto;
+}
+
+.theme-showcase
+  [data-columns]:not([data-columns='1'])
+  .sc-prose:has(> .sc-item-headline):has(~ a)
+  > :last-child {
+  margin-bottom: auto;
+}
+
+/* Full-width media box (legacy `image-top-full-width object-cover`) */
+.theme-showcase [data-media-position='top-full'] img {
+  object-fit: cover;
+}
+
+/* Links keep their case and weight in headings (legacy `a` text transform and weight) */
+.theme-showcase .sc-prose a {
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* Media on the left (legacy `left-center-no-resize`): the text column is as wide as its content */
+.theme-showcase [data-media-position='left'] > :has(> .sc-prose) {
+  flex: 0 1 auto;
 }
 
 /* One-column text blocks (legacy list layout): items 8px apart at every width */
@@ -499,7 +595,9 @@
   padding: 8px 0 4px;
 }
 
-/* Article list: two columns of horizontal cards, image left (3:2) */
+/* Article list (legacy `rs-listitem`): horizontal cards on the page colour with a 1px frame in
+   it, image left (3:2, stretched to the text), title, three-line excerpt and the link bottom
+   right. Stacked up to 512px; one column up to 767px, two from 768px, 8px / 16px apart */
 .theme-showcase
   [data-block='websiteRelatedArticles']
   :is([data-layout='list'], [data-layout='2-column-list'])
@@ -510,26 +608,45 @@
 .theme-showcase
   :is([data-layout='list'], [data-layout='2-column-list'])
   .sc-card {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: 1fr auto;
   padding: 8px;
+  border: 1px solid #e6eaea;
   border-radius: 0;
-  background: transparent;
+  background: #e6eaea;
 }
 
 .theme-showcase
   :is([data-layout='list'], [data-layout='2-column-list'])
   .sc-card
   .sc-card-media {
-  align-self: start;
+  grid-row: 1 / 3;
+  align-self: stretch;
   width: 100%;
-  height: auto;
+  height: 100%;
   max-height: none;
   aspect-ratio: 3 / 2 !important; /* beats the card's inline image ratio */
 }
 
 .theme-showcase
   :is([data-layout='list'], [data-layout='2-column-list'])
+  :is(.sc-card-body, .sc-card-cta) {
+  grid-column: 2;
+}
+
+.theme-showcase
+  :is([data-layout='list'], [data-layout='2-column-list'])
   .sc-card-body {
-  padding: 8px 8px 0;
+  padding: 8px;
+}
+
+.theme-showcase
+  :is([data-layout='list'], [data-layout='2-column-list'])
+  .sc-card-title {
+  margin: 0 0 8px;
+  padding: 0;
+  font-family: Outfit, sans-serif;
 }
 
 .theme-showcase
@@ -537,8 +654,10 @@
   .sc-card-text
   p {
   display: -webkit-box;
-  margin-top: 8px;
   overflow: hidden;
+  font-family:
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 14px;
   line-height: 20px;
   -webkit-box-orient: vertical;
@@ -550,7 +669,7 @@
   .sc-card-cta {
   display: flex;
   justify-content: flex-end;
-  padding: 0 0 8px;
+  padding: 0 8px 8px;
 }
 
 .theme-showcase
@@ -561,6 +680,7 @@
   padding: 6px 8px;
   color: var(--g-orange);
   font-weight: 500;
+  line-height: normal;
 }
 
 .theme-showcase
@@ -676,27 +796,9 @@
 
   .theme-showcase
     [data-block='websiteRelatedArticles']
-    [data-layout='list']
+    :is([data-layout='list'], [data-layout='2-column-list'])
     > ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .theme-showcase
-    :is([data-layout='list'], [data-layout='2-column-list'])
-    .sc-card {
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    grid-template-rows: 1fr auto;
-  }
-
-  .theme-showcase [data-layout='2-column-list'] .sc-card-media {
-    grid-row: 1 / 3;
-  }
-
-  .theme-showcase
-    [data-layout='2-column-list']
-    :is(.sc-card-body, .sc-card-cta) {
-    grid-column: 2;
   }
 }
 
@@ -787,10 +889,6 @@
     padding-bottom: 0;
   }
 
-  .theme-showcase [data-block='portalArticle'] .sc-prose p + p {
-    margin-top: 8px;
-  }
-
   .theme-showcase blockquote {
     margin: 14px 40px;
     font-size: 14px;
@@ -815,18 +913,14 @@
   }
 
   .theme-showcase
-    :is([data-layout='list'], [data-layout='2-column-list'])
-    .sc-card {
-    display: flex;
-    flex-direction: column;
-    padding: 4px;
-  }
-
-  .theme-showcase
     [data-block='websiteRelatedArticles']
     :is([data-layout='list'], [data-layout='2-column-list'])
     > ul {
     gap: 8px;
+  }
+
+  .theme-showcase [data-block='websiteRelatedArticles'] > .sc-section {
+    padding: 0;
   }
 
   .theme-showcase [data-block='websiteRelatedArticles'] .sc-section-title {
@@ -835,8 +929,32 @@
 
   .theme-showcase
     :is([data-layout='list'], [data-layout='2-column-list'])
-    .sc-card-body {
-    padding-bottom: 8px;
+    .sc-card-cta
+    a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 512px) {
+  .theme-showcase
+    :is([data-layout='list'], [data-layout='2-column-list'])
+    .sc-card {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding: 4px;
+  }
+
+  .theme-showcase
+    :is([data-layout='list'], [data-layout='2-column-list'])
+    .sc-card
+    .sc-card-media {
+    grid-row: auto;
+  }
+
+  .theme-showcase
+    :is([data-layout='list'], [data-layout='2-column-list'])
+    :is(.sc-card-body, .sc-card-cta) {
+    grid-column: auto;
   }
 }
 
@@ -1143,25 +1261,53 @@
   }
 }
 
-/* Footer: the client address continues the © line (same Karla text), set off by an orange dot;
-   on phones it is its own centred line */
+/* Footer (legacy `.footer__bottom_legal p::before`): the address line above "© Gotsch GmbH",
+   the links right of it; up to 992px all centred, the links 10px below. 11.2px text at every width */
+.theme-showcase.sc-footer > div > div > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+  align-items: start;
+}
+
 .theme-showcase .sc-footer-address {
-  margin-left: 0;
+  grid-row: 1;
+  grid-column: 1;
+  margin: 0;
 }
 
 .theme-showcase .sc-footer-address::before {
-  content: '·';
-  margin: 0 10px;
-  color: var(--g-orange);
-  font-weight: 700;
+  content: 'Gotsch GmbH, ';
+}
+
+.theme-showcase.sc-footer > div > div > div > div:first-child > p {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.theme-showcase.sc-footer > div > div > div > div:last-child > p {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.theme-showcase.sc-footer :is(p, address, a) {
+  font-size: 0.7rem;
 }
 
 @media (max-width: 992px) {
-  .theme-showcase .sc-footer-address {
-    margin-top: 4px;
+  .theme-showcase.sc-footer > div > div > div {
+    grid-template-columns: minmax(0, 1fr);
   }
 
-  .theme-showcase .sc-footer-address::before {
-    content: none;
+  .theme-showcase.sc-footer > div > div > div > div:last-child > p {
+    grid-row: 3;
+    grid-column: 1;
+  }
+}
+
+/* Paragraph rhythm on phones (legacy RsTheme `p + p` up to 468px) */
+@media (max-width: 468px) {
+  .theme-showcase [data-block='portalArticle'] .sc-prose p + p {
+    margin-top: 8px;
   }
 }
